@@ -57,6 +57,9 @@ svg:not(:root) {
          #massage-mobile{
         display: none !important;
      }
+         #message-destop{
+        display: none !important;
+     }
 @media screen and (max-width: 900px) {
     .user-tooltip .list_item_text {
         width: 100%;
@@ -70,12 +73,16 @@ svg:not(:root) {
         display: none;
     }
      #massage-mobile{
-        display: flex !important;
+        display: none !important;
      }
      #message-destop{
         display: none !important;
      }
 }
+
+#message-destop{
+        display: none !important;
+     }
 .css-12snods {
     position: fixed;
     inset: 0px;

@@ -12,6 +12,15 @@
   padding-bottom: 10px;
   /* overflow: hidden; */
 }
+
+#massage-mobile{
+    display: none !important;
+}
+
+#message-destop{
+        display: none !important;
+     }
+
 .cart-popup-img{
     width: 100%;
     height: 110px;

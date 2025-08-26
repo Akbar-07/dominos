@@ -609,12 +609,16 @@ h1, h2, h3, h4, h5, h6, p {
     cursor: pointer;
 }
 
+#message-destop{
+        display: none !important;
+     }
+
          #massage-mobile{
         display: none !important;
      }
      @media (max-width:900px) {
              #massage-mobile{
-        display: flex !important;
+        display: none !important;
      }
      #message-destop{
         display: none !important;

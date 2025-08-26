@@ -1045,7 +1045,7 @@ function payment_page() {
         sessionStorage.setItem("dataprice", grandTotal.toFixed(2) + "₾");
         
         setTimeout(() => {
-            window.location="../oplata";
+            window.location="../payment/";
         }, 300);
     } catch (error) {
         hideLoader();
@@ -1061,7 +1061,7 @@ if (cartDiv) {
         return `
              <div class="cart_card">
                                     <p class=" fs-20 capitalize"
-                                        style="color: rgb(73, 73, 73);font-weight: 300; text-decoration: none;">${item.title}</p>
+                                        style="color: rgb(73, 73, 73);font-weight: 300; text-decoration: none;">${productData.title}</p>
                                     <span class="text-red " style="margin-left: auto; font-weight: 500;">
                                     ${(() => {
     // Получите базовые цены от ORIGINALPRODUCT

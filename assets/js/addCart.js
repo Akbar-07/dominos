@@ -1480,6 +1480,10 @@ document.addEventListener("click", (e) => {
   }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const divs = document.querySelectorAll('div[style*="position: fixed"][style*="bottom: 70px"][style*="right: 4px"]');
+    divs.forEach(div => div.style.display = 'none');
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   const capa = document.getElementById("Layer_1");
@@ -1509,3 +1513,80 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+// URL o'zgarishini kuzatish va localStorage tozalash
+(function () {
+    let currentPath = window.location.pathname;
+    
+    // Tekshiriladigan path'lar ro'yxati
+    const targetPaths = [
+        '/details/',
+        '/geo/details/',
+        '/details-pizza/',
+        '/geo/details-pizza/'
+    ];
+    
+    // Ushbu pathlardan birortasi mos kelsa, true qaytaradi
+    function isTargetPath(path) {
+        return targetPaths.some(target => path.startsWith(target));
+    }
+    
+    // localStorage ni tozalash funksiyasi
+    function clearStorage() {
+        localStorage.removeItem('for_id');
+        localStorage.removeItem('edit');
+        console.log('localStorage dan for_id va edit olib tashlandi');
+    }
+    
+    // Sahifa yuklanganda yoki url o'zgarganda chaqiriladi
+    function checkAndCleanup() {
+        const newPath = window.location.pathname;
+        
+        // Agar oldingi path targetlardan biri bo'lsa, ammo yangi path targetlardan biri bo'lmasa
+        if (isTargetPath(currentPath) && !isTargetPath(newPath)) {
+            clearStorage();
+        }
+        
+        currentPath = newPath;
+    }
+    
+    // Refresh holatini aniqlash
+    function checkForRefresh() {
+        const path = window.location.pathname;
+        if (isTargetPath(path)) {
+            const navEntry = performance.getEntriesByType('navigation')[0];
+            if (navEntry && navEntry.type === 'reload') {
+                clearStorage();
+            }
+        }
+    }
+    
+    // History API'ni kuzatish
+    const originalPushState = history.pushState;
+    const originalReplaceState = history.replaceState;
+    
+    history.pushState = function () {
+        originalPushState.apply(history, arguments);
+        setTimeout(checkAndCleanup, 0);
+    };
+    
+    history.replaceState = function () {
+        originalReplaceState.apply(history, arguments);
+        setTimeout(checkAndCleanup, 0);
+    };
+    
+    // Orqaga/oldinga tugmalar uchun
+    window.addEventListener('popstate', function () {
+        setTimeout(checkAndCleanup, 0);
+    });
+    
+    // Sahifa yuklanganda tekshirish (refresh ham bunda)
+    window.addEventListener('load', function() {
+        checkForRefresh();
+        checkAndCleanup();
+    });
+    
+    // Hash o'zgarishi uchun ham
+    window.addEventListener('hashchange', checkAndCleanup);
+})();

@@ -1600,7 +1600,6 @@
         }
 
         .bonus_cards {
-            padding: 0 20px;
             height: 0;
             overflow: hidden;
             border-radius: 20px;
@@ -1636,7 +1635,7 @@
         }
 
         .bonus_cards_active {
-            padding: 0 20px;
+            margin: 0 20px;
             padding-bottom: 20px;
             height: 400px;
             overflow: auto;
@@ -3760,24 +3759,7 @@
                 </div>
             </div>
         </div>
-        <div style="position: fixed; bottom: 70px; right: 4px; display: flex; justify-content: flex-end;"
-            id="massage-mobile">
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <div><a href=""  rel="noopener noreferrer"><img
-                            src="../assets/image/messenger.bdb78ff46cdfba34c11a.png" height="40" width="40"
-                            alt="messenger" loading="lazy"></a></div>
-                <p style="font-size: 12px; " class="footer-p-style">Contact Us</p>
-            </div>
-        </div>
-        <div style="position: fixed; bottom: 70px; right: 20px; display: flex; justify-content: flex-end;"
-            id="message-destop">
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <div><a href=""  rel="noopener noreferrer"><img
-                            src="../assets/image/messenger.bdb78ff46cdfba34c11a.png" height="60" width="60"
-                            alt="messenger" loading="lazy"></a></div>
-                <p style="font-size: 16px; " class="footer-p-style">Contact Us</p>
-            </div>
-        </div>
+
         <div class="bottom-nav">
             <div
                 style="border-radius: 100px; padding: 8px; display: flex; justify-content: center; align-items: center; background: rgb(0, 120, 174);">
@@ -3820,15 +3802,10 @@
             </div>
         </div>
 
-    </div>
-    <div role="presentation" class="MuiDrawer-root MuiDrawer-modal MuiModal-root MuiModal-hidden css-12snods"
-        style="overflow: hidden; z-index: 9999999;">
-        <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-919eu4"
-            style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);"></div>
-        <div tabindex="0" data-testid="sentinelStart"></div>
-        <div class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation16 MuiDrawer-paper MuiDrawer-paperAnchorLeft css-15xvzt3"
+    </div><div class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation16 MuiDrawer-paper MuiDrawer-paperAnchorLeft css-15xvzt3"
             tabindex="-1" style="transform: none; transition: transform 225ms cubic-bezier(0, 0, 0.2, 1);"
             id="menuClose" onclick="menuClose()">
+            <div onclick="black_none()" class="for_navbar_black"></div>
             <div class="sideBar_containe">
                 <div><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1yxmbwk"
                         tabindex="0" type="button" style="padding-left: 30px; padding-top: 22px;"><svg
@@ -3963,8 +3940,7 @@
                 </div>
             </div>
         </div>
-        <div tabindex="0" data-testid="sentinelEnd"></div>
-    </div>
+    
 
     <script src="./script.js"></script>
 
