@@ -1,0 +1,135 @@
+.fs-16 {
+    font-size: 16px;
+}
+.pointer {
+    cursor: pointer;
+}
+.fs-14 {
+    font-size: 14px;
+    font-family: "Kanit", sans-serif !important;
+}
+.css-d5nl9o {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    color: rgb(93, 93, 93);
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.google-map-autocomplete {
+    width: 100%;
+}
+.google-map-autocomplete input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.pac-container {
+    background-color: #fff;
+    position: absolute !important;
+    z-index: 1000;
+    border-radius: 2px;
+    border-top: 1px solid #d9d9d9;
+    font-family: Arial, sans-serif;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.pac-item {
+    cursor: default;
+    padding: 0 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 30px;
+    text-align: left;
+    border-top: 1px solid #e6e6e6;
+    font-size: 11px;
+    color: #515151;
+}
+.hdpi .pac-icon {
+    background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png);
+}
+.pac-icon-marker {
+    background-position: -1px -161px;
+}
+.pac-icon {
+    width: 15px;
+    height: 20px;
+    margin-right: 7px;
+    margin-top: 6px;
+    display: inline-block;
+    vertical-align: top;
+    background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);
+    -webkit-background-size: 34px 34px;
+    background-size: 34px;
+}
+.pac-item-query {
+    font-size: 13px;
+    padding-right: 3px;
+    color: #000;
+}
+.pac-matched {
+    font-weight: 700;
+}
+.google-map-autocomplete {
+    position: relative; /* PAC shu konteynerga nisbatan joylashadi */
+}
+
+.pac-container {
+    top: 100% !important; /* input tagidan past */
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 999999 !important;
+}
+@media (max-width:1000px) {
+    .containerAddMap{
+        width: 700px !important;
+    }
+}
+@media screen and (max-width: 900px) {
+    .login_banner {
+        height: 100vh !important;
+    }
+    .containerAddMap{
+        margin-top: 90px !important;
+    }
+}
+@media (max-width:805px) {
+        .containerAddMap{
+        width: 600px !important;
+    }
+}
+@media (max-width:720px) {
+            .containerAddMap{
+        width: 500px !important;
+    }
+}
+
+@media (max-width:600px){
+    #login_banner{
+        display: none;
+    }
+   #Login_banner_Mobile{
+    display: block !important;
+   }
+   body{
+    height: 80% !important;
+   }
+   .pac-container {
+    top: 35px !important; /* input tagidan past */
+    left: 12% !important;
+    width: 85% !important;
+
+}
+.pac-containerMobile{
+    position: relative;
+    z-index: 9999999 !important;
+}
+}

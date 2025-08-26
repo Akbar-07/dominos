@@ -1,0 +1,166 @@
+.cart-popup{
+  position: absolute;
+  top: 77px; /* navbar ostida */
+  right: -14px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  /* padding: 15px; */
+  min-width: 300px;
+  /* height: 300px; */
+  z-index: 999999;
+  padding-bottom: 10px;
+  /* overflow: hidden; */
+}
+.cart-popup-img{
+    width: 100%;
+    height: 110px;
+    /* background-color: red; */
+    margin-top: 30px;
+}
+.cart-popup-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.cart-order-container-btn{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+.view-btn button{
+    width: 100px;
+    border-radius: 15px;
+    padding: 5px;
+    background: rgb(227, 24, 54);
+    border: none;
+    color: white;
+    cursor: pointer;
+            font-family: "Kanit", sans-serif !important;
+
+}
+.cart-total p{
+            font-family: "Kanit", sans-serif !important;
+
+}
+.redflag{
+    color: rgb(227, 24, 54) !important;
+            font-family: "Kanit", sans-serif !important;
+
+}
+.view-btn{
+    position: relative;
+    right: 83px;
+    top: 28px;
+
+}
+.cart-total{
+        position: relative;
+    left: 95;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.15);
+  background: none;
+  position: relative;
+  top: -13px;
+  left: 125px;
+}
+
+.triangle::after {
+  content: "";
+  position: absolute;
+  top: -0px; /* kontur qalinligi */
+  left: -12px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid transparent; /* fon rangiga mos */
+}
+.item-card-container{
+    width: 100%;
+    height: 80px !important;
+    /* background-color: red; */
+    border-bottom: 1px solid #d3d3d3;
+}
+.item-card-container{
+    flex-direction: unset !important;
+}
+.img-cart-item{
+    width: 70px;
+    height: 100%;
+    /* background: blue; */
+}
+.img-cart-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding-left: 5px;
+}
+.card-text-info-item{
+    width: 180px;
+    height: 100%;
+    /* background: purple; */
+}
+.cart-item-map-container{
+    width: 100%;
+    height: 200px;
+    overflow-y: scroll;
+    justify-content: start !important;
+        position: relative;
+    top: -14px;
+}
+.card-text-info-item{
+    text-align: left !important;
+}
+.card-text-info-item p{
+    width: 130px;
+    font-size: 14px;
+    line-height: 14px;
+    position: relative;
+    right: 16px;
+        -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+            font-family: "Kanit", sans-serif !important;
+
+}
+.card-text-info-item span{
+    width: 130px;
+    /* background-color: gold; */
+    font-size: 12px;
+    position: relative;
+    right: 16px;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+            font-family: "Kanit", sans-serif !important;
+
+}
+.css-1afh8op .MuiBadge-badge {
+    top: 0px;
+    right: 0px;
+}
+.countCart{
+    display: none;
+}
+/* .css-16mqrq1{
+    background-color: red;
+} */
+/* .hover-aasd{
+    position: absolute;
+    top: 0px;
+    width: 50px;
+    height: 80px;
+    background-color: blue;
+    z-index: 9999;
+} */

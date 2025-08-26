@@ -1,0 +1,73 @@
+.jss12 {
+    color: #000000;
+    border: 1px solid #000000 !important;
+    padding: 4px 44px;
+    background: #fff;
+    box-shadow: 0px 0px 3px black;
+    white-space: nowrap;
+    border-radius: 25px;
+    letter-spacing: 0.3px;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 10px !important;
+}
+.jss13 {
+    color: #fff;
+    border: 1px solid #0078ae !important;
+    padding: 4px 44px;
+    background: #0078ae;
+    box-shadow: 0px 0px 3px black;
+    white-space: nowrap;
+    border-radius: 25px;
+    letter-spacing: 0.3px;
+    text-transform: capitalize;
+    width: 100%;
+
+}
+#Login_banner_Mobile_3{
+    display: none !important;
+}
+@media screen and (max-width: 900px) {
+    .login_banner {
+        height: 100vh !important;
+    }
+    .containerAddreses{
+         margin-top: 85px !important;
+         width: 700px !important;
+    }
+}
+@media (max-width:810px) {
+       .containerAddreses{
+         width: 600px !important;
+    } 
+}
+@media (max-width:688px) {
+           .containerAddreses{
+         width: 500px !important;
+    } 
+}
+@media (max-width:600px) {
+    #login_banner_3{
+        display: none !important;
+    }
+    #Login_banner_Mobile_3{
+        display: block !important; 
+        padding-top: 10px !important;
+    }
+    .btnaaa{
+        background: none;
+        border: 1px solid black !important;
+        box-shadow: 0px;
+    }
+    .btnasdd{
+    color: #fff;
+    border: 1px solid #0078ae !important;
+    padding: 4px 44px;
+    background: #0078ae;
+    box-shadow: 0px 0px 3px black;
+    white-space: nowrap;
+    border-radius: 25px;
+    letter-spacing: 0.3px;
+    text-transform: capitalize;
+    }
+}

@@ -1,0 +1,634 @@
+.header, .header-mobile {
+    padding-block: 14px;
+    padding-inline: 22px;
+}
+
+.header-mobile {
+    background: #fff;
+    box-shadow: 0 2px 4px 0 hsla(0, 0%, 68%, .488) !important;
+    left: 0;
+    right: 0;
+    z-index: 25;
+}
+
+.header .bx-heart{
+    font-size: 35px;
+    color: black;
+}
+
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+.css-148fdm8 {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.54);
+    outline: 0px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    margin: 0px;
+    text-decoration: none;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    overflow: visible;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0px;
+}
+    #header-mobile{
+        display: none;
+    }
+@media screen and (max-width: 900px) {
+    .user-tooltip .list_item_text {
+        width: 100%;
+    }
+}
+@media (max-width:900px) {
+    #header-mobile{
+        display: block;
+        position: relative;
+        z-index: 9999;
+    }
+    #header-destop{
+        display: none;
+    }
+}
+.css-12snods {
+    position: fixed;
+    inset: 0px;
+    visibility: hidden;
+    z-index: 1200;
+}
+
+.for_navbar_black{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.526) ;
+    z-index: 1111111;
+    display: none;
+}
+.css-15xvzt3 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 10px -5px, rgba(0, 0, 0, 0.14) 0px 16px 24px 2px, rgba(0, 0, 0, 0.12) 0px 6px 30px 5px;
+    background-image: none;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 11111111;
+    position: fixed;
+    top: 0px;
+    left: -500px;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    flex: 1 0 auto;
+    outline: 0px;
+    transition: 0.5s;
+}
+.sideBar_containe {
+    background-color: #f7f7f7;
+    height: 100dvh;
+    position: relative;
+    width: 260px;
+}
+.css-mf11to {
+    margin: 0px;
+    flex-shrink: 0;
+    border-width: 0px 0px thin;
+    border-style: solid;
+    border-color: rgb(227, 232, 239);
+    opacity: 1;
+}
+.footer {
+    align-items: center;
+    bottom: 0;
+    display: flex
+;
+    flex-direction: column;
+    left: 20px;
+    position: fixed;
+}
+.scrollable {
+    height: 330px;
+    overflow: auto;
+}
+.user-tooltip {
+    margin: 0;
+    padding: 0;
+}
+.css-qfmzwt {
+    display: flex
+;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left !important;
+}
+
+
+.css-kj3bb2 {
+    flex-shrink: 0;
+    display: inline-flex;
+    color: rgb(248, 248, 248);
+    min-width: 36px;
+}
+
+
+.css-1yxmbwk {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.54);
+    outline: 0px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    margin: 0px;
+    text-decoration: none;
+    flex: 0 0 auto;
+    padding: 8px;
+    border-radius: 50%;
+    overflow: visible;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.side_bar_top, .top_flag-icon {
+    align-items: center;
+    display: flex
+;
+}
+
+.side_bar_top {
+    flex-direction: column;
+}
+.css-uzejuo {
+    position: relative;
+    display: flex
+;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    user-select: none;
+    color: rgb(30, 136, 229);
+    background: rgb(144, 202, 249);
+}
+.text-overflow {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fs-16 {
+    font-size: 16px;
+}
+.IBM-Medium {
+    font-family: IBM-Medium !important;
+}
+h1, h2, h3, h4, h5, h6, p {
+    letter-spacing: .3px !important;
+    margin: 0 !important;
+}
+.css-1t6pbdo {
+    position: relative;
+    appearance: none;
+    max-width: 100%;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.8125rem;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 32px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.08);
+    vertical-align: middle;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    margin: 0px;
+    border-radius: 16px;
+    white-space: nowrap;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: 0px;
+    text-decoration: none;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    padding: 0px;
+}
+.css-1t6pbdo .MuiChip-avatar {
+    margin-left: 5px;
+    margin-right: -6px;
+    width: 24px;
+    height: 24px;
+    color: rgb(0, 0, 0);
+    font-size: 0.75rem;
+}
+.css-uzejuo {
+    position: relative;
+    display: flex
+;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    user-select: none;
+    color: rgb(30, 136, 229);
+    background: rgb(144, 202, 249);
+}
+.css-14vsv3w {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 12px;
+    padding-right: 12px;
+    white-space: nowrap;
+}
+.css-w0pj6f {
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    inset: 0px;
+    border-radius: inherit;
+}
+.css-vubbuv {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list_item_icon {
+    color: #636363;
+    padding-left: 22px !important;
+}
+.user-tooltip .list_item_text {
+    text-wrap: nowrap;
+    align-items: center;
+    color: #494949;
+    cursor: pointer;
+    display: flex;
+    font-family: 'IBM Plex Sans', sans-serif !important;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: flex-start;
+    list-style: none;
+    margin-right: auto;
+    padding-block: 14px;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    text-align: start;
+    width: 300px;
+    position: relative;
+    right: 35px;
+    top: 2px;
+}
+.Kanit-Extra-Light {
+     font-family: "Kanit", sans-serif !important;
+     font-weight:200 !important;
+}
+.css-14enq8 {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    color: rgb(3, 140, 200);
+    font-size: 16px;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.css-1mtjo9i {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    color: rgb(232, 0, 69);
+    font-size: 16px;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.css-y28f86 {
+    position: fixed;
+    inset: 0px;
+    z-index: 1200;
+}
+
+@media (max-width:600px) {
+    #login_banner-destop{
+        display: none !important;
+    }
+    #mobile_banner{
+        display: flex !important;
+        align-items: center !important;
+        
+    }
+    #footer-destop{
+        display: none;
+    }
+    #message-destop{
+        display: none !important;
+    }
+}
+@media (max-width: 599.95px) {
+    .jss578 {
+        height: 100dvh;
+    }
+}
+.jss578 {
+    gap: 24px;
+    display: flex
+;
+    align-items: center;
+}
+.Login_banner_Mobile, .mobile_banner {
+    background-color: #fff;
+    background-image: url('../assets/image/backgroundRegister.16cd4e684cb959594932.png') !important;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+   
+}
+
+.jss184 {
+    width: 200px;
+    height: 126px;
+    display: flex
+;
+    outline: 3px solid white;
+    background: #e31836;
+    align-items: center;
+    border-radius: 30px;
+    margin-bottom: 18px;
+    justify-content: center;
+}
+.text-red {
+    color: #e31836;
+    color: var(--dominos-red-primary);
+}
+
+.Kanit-Regular {
+        font-family: "Kanit", sans-serif !important;
+}
+.jss185 {
+    width: 200px;
+    height: 126px;
+    display: flex
+;
+    outline: 3px solid white;
+    background: #0078ae;
+    align-items: center;
+    border-radius: 30px;
+    margin-bottom: 18px;
+    justify-content: center;
+}
+.text-blue, a:focus {
+    color: #0078ae;
+
+}
+
+.Kanit-SemiBold {
+         font-family: "Kanit", sans-serif !important;
+    letter-spacing: .3px;
+}
+.jss183 {
+    gap: 24px;
+    display: flex
+;
+    align-items: center;
+}
+
+ .flag-wrapper {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .flag-trigger {
+    cursor: pointer;
+  }
+
+  .flag-trigger img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .p-style {
+    font-size: 14px;
+    margin: 4px 0 0;
+  }
+
+  /* Tooltip */
+  .tooltip-flag {
+    position: absolute;
+    top: 62px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 8px;
+    width: 80px;
+    /* height: 75px; */
+    display: flex;           /* Yonma-yon joylash */
+    align-items: center;     /* Vertikal markazlash */
+    gap: 6px;                /* Oraliq */
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    white-space: nowrap;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .tooltip-flag img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
+  .img-postion-1{
+    position: relative;
+    top: 23px;
+    right: 15px;
+  }
+    .img-postion-2{
+    position: relative;
+    right: 15px;
+    top: 10px;
+  }
+  .text-postion-1{
+    position: relative;
+    top: -5px !important;
+  }
+    .text-postion-2{
+    position: relative;
+    top: -18px !important;
+  }
+  .tooltip-flag span{
+    position: relative;
+    left: 17px;
+       font-family: "Kanit", sans-serif !important;
+  }
+
+  /* Hover bo'lganda chiqish */
+  .flag-wrapper:hover .tooltip-flag {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .jss2 {
+    width: 155px;
+    height: 47px;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 28px;
+}
+.css-dt10u0 .MuiChip-avatar {
+    margin-left: 4px;
+}
+.css-dt10u0 .MuiChip-avatar {
+    margin-left: 5px;
+    margin-right: -6px;
+    width: 24px;
+    height: 24px;
+    color: rgb(0, 0, 0);
+    font-size: 0.75rem;
+}
+.jss3 {
+    background: none;
+    object-fit: contain;
+    border-radius: 0;
+    margin-bottom: 0.7px;
+}
+.css-1hdwea4 {
+    position: relative;
+    display: flex
+;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    user-select: none;
+    color: rgb(30, 136, 229);
+    /* background: rgb(144, 202, 249); */
+}
+.css-k62kit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 11px;
+    padding-right: 11px;
+    white-space: nowrap;
+}
+.css-1e9y6v2 .MuiChip-avatar {
+    margin-left: 5px;
+    margin-right: -6px;
+    width: 24px;
+    height: 24px;
+    color: rgb(0, 0, 0);
+    font-size: 0.75rem;
+}
+.top_flag-icon img:hover{
+    cursor: pointer;
+}
+
+         #massage-mobile{
+        display: none !important;
+     }
+     @media (max-width:900px) {
+             #massage-mobile{
+        display: flex !important;
+     }
+     #message-destop{
+        display: none !important;
+     }
+     }
+.css-919eu4 {
+    position: fixed;
+    display: none;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    inset: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-tap-highlight-color: transparent;
+    z-index: -1;
+}

@@ -1,0 +1,2343 @@
+<html lang="en">
+
+<head>
+    <style data-emotion="css" data-s=""></style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Domino's georgia pizza">
+    <meta name="facebook-domain-verification" content="xhjkxyjza91gn3nus3x27givvpd2ht">
+    <link rel="icon" type="image/x-icon" href="../assets/image/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Domino's Pizza</title>
+    <link href="../assets/css/main.f30fce83.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/css/terms-main.css">
+    <link rel="stylesheet" href="../assets/css/addCart.css">
+
+    <style>
+        .css-k62kit {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-left: 11px;
+            padding-right: 11px;
+            white-space: nowrap;
+        }
+
+        body {
+            margin: 0px;
+            color: rgb(0, 0, 0);
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5;
+            letter-spacing: 0.00938em;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .navbar-header {
+            display: flex;
+            gap: 10px;
+        }
+
+        .container-navabar-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .Kanit-Regular {
+            font-family: "Kanit", sans-serif !important;
+            letter-spacing: -0.2px;
+            /* Harflarni yaqinlashtirish */
+            font-weight: 600;
+        }
+
+        .aaasad {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .p-style {
+            font-family: "Kanit", sans-serif !important;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .footer-p-style {
+            font-family: "Kanit", sans-serif !important;
+        }
+
+        .saddsd {
+            display: block !important;
+        }
+
+        .jss1 {
+            padding: 20px 55px 20px 55px !important;
+            margin-bottom: 60px !important;
+        }
+
+        @media (max-width: 600px) {
+            .jss1 {
+                padding: 20px 10px 20px 10px !important;
+                margin-bottom: 60px !important;
+            }
+        }
+
+        @media (max-width: 599px) {
+            .jss1 {
+                padding: 20px 10px 20px 10px !important;
+                margin-bottom: 50px !important;
+            }
+        }
+
+        .active-link {
+            color: #e80045 !important;
+        }
+    </style>
+    <style data-jss="" data-meta="makeStyles">
+        .jss1 {
+            padding: 30px 75px 20px 75px;
+        }
+
+        @media (max-width:599.95px) {
+            .jss1 {
+                padding: 20px 10px 20px 10px;
+                margin-bottom: 60px;
+            }
+        }
+
+        @media (min-width:600px) {
+            .jss1 {
+                padding: 20px 10px 20px 10px;
+                margin-bottom: 60px;
+            }
+        }
+
+        @media (min-width:900px) {
+            .jss1 {
+                padding: 20px 55px 20px 55px;
+                margin-bottom: 60px;
+            }
+        }
+
+        .jss2 {
+            width: 150px;
+            height: 47px;
+            align-items: center;
+            font-weight: bold;
+            border-radius: 28px;
+        }
+
+        .jss3 {
+            background: none;
+            object-fit: contain;
+            border-radius: 0;
+            margin-bottom: 0.7px;
+        }
+
+        .jss4 {
+            font-size: 16px;
+            font-weight: normal;
+            line-height: normal;
+            letter-spacing: normal;
+        }
+
+        .jss4::placeholder {
+            color: #000;
+            font-size: 16px;
+            line-height: 24;
+            letter-spacing: 0.3px;
+        }
+
+        @media (max-width:599.95px) {
+            .jss4 {
+                font-size: 16px;
+            }
+
+            .jss4::placeholder {
+                font-size: 16px;
+            }
+        }
+
+        .jss5 {
+            font-size: 16px;
+            font-weight: normal;
+            line-height: normal;
+            border-radius: 30px;
+            letter-spacing: normal;
+        }
+
+        .jss5::placeholder {
+            color: #000;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24;
+            letter-spacing: 0.3px;
+        }
+
+        @media (max-width:599.95px) {
+            .jss5 {
+                font-size: 16px;
+            }
+
+            .jss5::placeholder {
+                font-size: 16px;
+                font-family: Kanit-SemiBold;
+            }
+        }
+
+        .jss6 {
+            color: #000;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: normal;
+            letter-spacing: normal;
+        }
+
+        .jss7 {
+            color: #fff;
+            border: none;
+            background: #0078ae;
+            transition: 1s;
+            border-radius: 30px;
+            padding-inline: 30px;
+        }
+
+        .jss7:hover {
+            color: #fff;
+            border: none;
+            background: #0078ae;
+            box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+            transition: 1s;
+        }
+
+        .jss7:disabled {
+            color: white;
+            background: #AEAEAE;
+        }
+
+        .jss8 {
+            color: #fff;
+            border: none;
+            background: #e31836;
+            transition: 1s;
+            border-radius: 30px;
+            padding-inline: 30px;
+        }
+
+        .jss8:hover {
+            color: #fff;
+            border: none;
+            background: #e31836;
+            box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+            transition: 1s;
+        }
+
+        .jss8:disabled {
+            color: #fff;
+            background: #AEAEAE;
+        }
+
+        @media (max-width:599.95px) {
+            .jss8 {
+                border-radius: 10px;
+            }
+        }
+
+        .jss9 {
+            color: black;
+            cursor: pointer;
+            font-size: 25px;
+            transition: .3s;
+        }
+
+        .jss9:hover {
+            color: #0078AE;
+        }
+
+        .jss10 {
+            color: black;
+            cursor: pointer;
+            font-size: 25px;
+            transition: .3s;
+        }
+
+        .jss10:hover {
+            color: #E51937;
+        }
+
+        .jss11 {
+            color: #f8f8f8;
+            font-size: 22px;
+            font-weight: normal;
+            line-height: normal;
+            letter-spacing: 0.015em;
+        }
+
+        .jss12 {
+            color: #000000;
+            border: 1px solid #000000 !important;
+            padding: 4px 44px;
+            background: #fff;
+            box-shadow: 0px 0px 3px black;
+            white-space: nowrap;
+            border-radius: 25px;
+            letter-spacing: 0.3px;
+            text-transform: capitalize;
+        }
+
+        .jss12:hover {
+            color: #000000;
+            background: #fff;
+        }
+
+        .jss13 {
+            color: #fff;
+            border: 1px solid #0078ae !important;
+            padding: 4px 44px;
+            background: #0078ae;
+            box-shadow: 0px 0px 3px black;
+            white-space: nowrap;
+            border-radius: 25px;
+            letter-spacing: 0.3px;
+            text-transform: capitalize;
+        }
+
+        .jss13:hover {
+            color: #fff;
+            background: #0078ae;
+        }
+
+        .jss14 {
+            gap: 2rem;
+            display: flex;
+            margin-top: 1rem;
+            text-align: center;
+            align-items: center;
+            margin-bottom: 1rem;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .jss15 {
+            width: 160px;
+            display: flex;
+            background: #E6233F;
+            border-radius: 12px;
+            justify-content: center;
+        }
+
+        .jss16 {
+            height: calc(100vh - 100px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .jss17 {
+            text-align: center;
+        }
+
+        .jss18 {
+            gap: 18px;
+            margin: 12px 0px 28px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .jss18 .button_one {
+            width: 420px;
+            height: 57px;
+            font-size: 22px;
+            background: #0078AD;
+            border-radius: 20px;
+            text-transform: capitalize;
+        }
+
+        .jss18 .button_two {
+            color: #0078ae;
+            width: 420px;
+            height: 57px;
+            font-size: 22px;
+            background: white;
+            border-radius: 20px;
+            text-transform: capitalize;
+        }
+
+        .jss19 {
+            width: 665px;
+            height: 388px;
+            position: relative;
+            max-width: 665px;
+            background: white;
+            box-shadow: 0px 0px 3px gray;
+            max-height: 388px;
+            border-radius: 0px 0px 28px 28px;
+        }
+
+        @media (max-width:899.95px) {
+            .jss19 {
+                width: 550px;
+                height: 400px;
+            }
+        }
+
+        .jss20 {
+            top: -53px;
+            width: 100%;
+            display: flex;
+            position: absolute;
+        }
+
+        .jss21 {
+            border: none;
+            cursor: pointer;
+            padding: 16px 0px;
+            position: relative;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        .jss22 {
+            margin: 0 auto;
+        }
+
+        .jss23 {
+            padding: 8px;
+            background: #0078ae;
+            border-radius: 25px;
+            text-transform: capitalize;
+        }
+
+        .jss24 {
+            color: black;
+            width: 60px;
+            border: 2px solid #0078AE;
+            height: 55px;
+            padding: 12px;
+            text-align: center;
+            margin-right: 12px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .jss25 {
+            gap: 24px;
+            display: flex;
+            align-items: center;
+        }
+
+        .jss25 .button_one {
+            color: #e31836;
+            width: 200px;
+            border: 2px solid #e31836 !important;
+            cursor: pointer;
+            height: 44px;
+            background: #fff;
+            border-radius: 30px;
+            text-transform: uppercase;
+        }
+
+        .jss25 .button_two {
+            color: #0078ae;
+            width: 200px;
+            border: 2px solid #0078ae !important;
+            cursor: pointer;
+            height: 44px;
+            background: #fff;
+            border-radius: 30px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width:599.95px) {
+            .jss25 {
+                height: 100dvh;
+            }
+        }
+
+        .jss26 {
+            width: 200px;
+            height: 126px;
+            display: flex;
+            outline: 3px solid white;
+            background: #e31836;
+            align-items: center;
+            border-radius: 30px;
+            margin-bottom: 18px;
+            justify-content: center;
+        }
+
+        .jss27 {
+            width: 200px;
+            height: 126px;
+            display: flex;
+            outline: 3px solid white;
+            background: #0078ae;
+            align-items: center;
+            border-radius: 30px;
+            margin-bottom: 18px;
+            justify-content: center;
+        }
+
+        .jss28 {
+            border: 1px solid black;
+            display: flex;
+            padding: 4px 18px;
+            overflow: hidden;
+            align-items: center;
+            border-radius: 25px;
+            margin-bottom: 25px;
+            justify-content: space-between;
+        }
+
+        .jss28>div:first-child {
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+        }
+
+        .jss28>p {
+            color: #5A5555;
+            max-width: 500px;
+            white-space: nowrap;
+        }
+
+        .jss28>button {
+            border: 1px solid #0078AD;
+            padding: 0px 24px;
+            background: #fff;
+            margin-left: 6px;
+            border-radius: 25px;
+            text-transform: capitalize;
+        }
+
+        .jss29 {
+            cursor: pointer;
+            display: flex;
+            padding: 4px 24px;
+            box-shadow: 0px 3px 4px 2px lightgrey;
+            align-items: center;
+            user-select: none;
+            border-radius: 30px;
+            margin-bottom: 15px;
+            margin-inline: 4px;
+            justify-content: space-between;
+        }
+
+        @media (max-width:599.95px) {
+            .jss29 {
+                margin-bottom: 15px;
+            }
+        }
+
+        .jss30 {
+            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(6, 265px);
+        }
+
+        @media (max-width: 1800px) {
+            .jss30 {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        @media (max-width: 1430px) {
+            .jss30 {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .jss30 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .jss30 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .jss30 {
+                gap: 20px;
+                padding: 10px;
+                grid-template-columns: repeat(1, 100%);
+            }
+        }
+
+        @media (max-width: 400px) {
+            .jss30 {
+                gap: 20px;
+                padding: 10px;
+                grid-template-columns: repeat(1, 100%);
+            }
+        }
+
+        .jss31 {
+            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        @media (max-width: 1800px) {
+            .jss31 {
+                grid-template-columns: repeat(4, 265px);
+            }
+        }
+
+        @media (max-width: 1430px) {
+            .jss31 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .jss31 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .jss31 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .jss31 {
+                grid-template-columns: repeat(1, 100%);
+            }
+        }
+
+        @media (max-width: 400px) {
+            .jss31 {
+                gap: 20px;
+                padding: 10px;
+                grid-template-columns: repeat(1, 100%);
+            }
+        }
+
+        .jss32 {
+            overflow: hidden;
+            position: relative;
+            background: white;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 9px 0px;
+            ;
+            border-radius: 11px;
+        }
+
+        @media (max-width:599.95px) {
+            .jss32 {
+                overflow: visible;
+                margin-top: 2px;
+            }
+        }
+
+        .jss33 {
+            inset: -12px;
+            bottom: 1px;
+            display: flex;
+            position: absolute;
+            background: #0000007d;
+            text-align: center;
+            align-items: center;
+            border-radius: 11px 11px 0px 0px;
+            justify-content: center;
+        }
+
+        @media (max-width:599.95px) {
+            .jss33 {
+                top: 0;
+                left: 0;
+                bottom: 0;
+                display: flex;
+                position: absolute;
+                background: #0000007d;
+                text-align: center;
+                align-items: center;
+                border-radius: 11px 11px 11px 11px;
+                justify-content: center;
+            }
+        }
+
+        .jss34 {
+            padding: 12px;
+        }
+
+        @media (max-width:599.95px) {
+            .jss34 {
+                display: flex;
+                padding: 10px 10px;
+            }
+        }
+
+        .jss35 {
+            padding: 0;
+            text-align: end;
+        }
+
+        @media (max-width:599.95px) {
+            .jss35 {
+                top: 4px;
+                right: 6px;
+                position: absolute;
+            }
+        }
+
+        .jss36 {
+            color: #000000;
+            font-size: 18px;
+            letter-spacing: 0.3px;
+            text-transform: capitalize;
+        }
+
+        @media (max-width:599.95px) {
+            .jss36 {
+                font-size: 16px;
+                max-width: 80%;
+            }
+        }
+
+        .jss37 {
+            color: #000000;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        @media (max-width:599.95px) {
+            .jss37 {
+                font-size: 12px;
+                max-width: 85%;
+            }
+        }
+
+        .jss38 {
+            font-size: 18px;
+        }
+
+        .jss39 {
+            color: #E31836;
+            font-size: 40px;
+        }
+
+        .jss40 {
+            margin: 0;
+            display: grid;
+            margin-top: 16px;
+            align-items: center;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        @media (max-width:599.95px) {
+            .jss40 {
+                margin-top: 0;
+                grid-template-columns: 7fr 2fr;
+            }
+        }
+
+        .jss41 {
+            color: #ffffff;
+            width: 65px;
+            border: none;
+            cursor: pointer;
+            height: 25px;
+            font-size: 14px;
+            background: #E80045;
+            margin-left: auto;
+            user-select: none;
+            border-radius: 8px;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width:599.95px) {
+            .jss41 {
+                width: 85px;
+                font-size: 14px;
+                margin-left: 0;
+            }
+        }
+
+        .jss42 {
+            font-size: 24px;
+            line-height: 24px;
+            padding-left: 20px;
+            letter-spacing: 0.3px;
+        }
+
+        .jss43 {
+            color: #454444;
+            font-size: 16px;
+            line-height: 24px;
+            padding-top: 26px;
+            letter-spacing: 0.3px;
+            padding-bottom: 10px;
+        }
+
+        .jss44 {
+            color: #D9D9D9;
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 25px;
+        }
+
+        .jss45 {
+            color: #454444;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .jss46 {
+            color: #aeaeae;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: line-through;
+        }
+
+        @media (max-width:1199.95px) {
+            .jss46 {
+                font-size: 18px;
+            }
+        }
+
+        .jss47 {
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+            border-radius: 35px;
+            background-color: #ffffff;
+        }
+
+        @media (max-width:599.95px) {
+            .jss47 {
+                border-radius: 15px;
+            }
+        }
+
+        .jss48 {
+            color: #000000;
+            padding: 20px;
+            font-size: 23px;
+        }
+
+        @media (max-width:599.95px) {
+            .jss48 {
+                font-size: 16px;
+            }
+        }
+
+        .jss49 {
+            width: 100%;
+            border: 1px solid #454444;
+            margin-top: 20px;
+            border-radius: 21px;
+        }
+
+        @media (max-width:599.95px) {
+            .jss49 {
+                height: 100%;
+            }
+        }
+
+        .jss50 {
+            width: 100%;
+            border: 1px solid #454444;
+            border-radius: 21px;
+        }
+
+        @media (max-width:599.95px) {
+            .jss50 {
+                height: 100%;
+                align-items: center;
+            }
+        }
+
+        .jss51 {
+            width: 160px;
+            height: 100px;
+            object-fit: contain;
+            margin-left: 20px;
+            padding-block: 10px;
+        }
+
+        @media (max-width:599.95px) {
+            .jss51 {
+                width: 90px;
+                height: 80px;
+                margin-left: 8px;
+                padding-top: 5px;
+                padding-block: 10px;
+                padding-bottom: 5px;
+            }
+        }
+
+        .jss52 {
+            color: #000000;
+            display: flex;
+            font-size: 20px;
+        }
+
+        @media (max-width:599.95px) {
+            .jss52 {
+                font-size: 16px;
+                padding-top: 5px;
+            }
+        }
+
+        .jss53 {
+            color: #454444;
+            display: flex;
+            font-size: 15px;
+        }
+
+        @media (max-width:599.95px) {
+            .jss53 {
+                font-size: 12px;
+            }
+        }
+
+        .jss54 {
+            height: 100%;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+            ;
+            border-radius: 11px;
+            background-color: #ffffff;
+        }
+
+        @media (max-width:599.95px) {
+            .jss54 {
+                width: 100%;
+                height: 120px;
+                display: flex;
+            }
+        }
+
+        .jss55 {
+            width: 100%;
+            over-flow: auto;
+            background: #e31836;
+            margin-top: 15px;
+            border-radius: 25px;
+            padding-block: 10px;
+        }
+
+        .jss56 {
+            gap: 42px;
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            text-transform: uppercase;
+        }
+
+        @media (max-width:599.95px) {
+            .jss56 {
+                gap: 10px;
+                margin: 0;
+                padding: 5px;
+                padding-inline: 20px;
+            }
+        }
+
+        .jss57 {
+            color: #fff;
+            cursor: pointer;
+            font-size: 20px;
+            white-space: nowrap;
+        }
+
+        .jss58 {
+            display: flex;
+            margin-top: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width:1199.95px) {
+            .jss58 {
+                width: auto;
+                margin-top: 0;
+                text-align: center;
+                flex-direction: column;
+            }
+        }
+
+        .jss59 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .jss59>div {
+            gap: 8px;
+            width: 210px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @media (max-width:599.95px) {
+            .jss59 {
+                gap: 30px;
+                width: 140px;
+                margin-top: 14px;
+            }
+        }
+
+        @media (max-width:1199.95px) {
+            .jss59>div {
+                width: 150px;
+            }
+        }
+
+        .jss60 {
+            width: 61px;
+            cursor: pointer;
+            height: 61px;
+            border-radius: 100px;
+        }
+
+        @media (max-width:599.95px) {
+            .jss60 {
+                width: 55px;
+                height: 55px;
+                margin-left: 7px;
+            }
+        }
+
+        .jss61 {
+            padding: 20px;
+            padding-bottom: 6px;
+        }
+
+        @media (max-width:899.95px) {
+            .jss61 {
+                padding: 18px;
+                padding-bottom: 4px;
+            }
+        }
+
+        .jss62 {
+            gap: 28px;
+            display: flex;
+            margin-top: 4px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media (max-width:599.95px) {
+            .jss62 {
+                gap: 8px;
+            }
+        }
+
+        .jss63 {
+            font-size: 22px;
+        }
+
+        @media (max-width:899.95px) {
+            .jss63 {
+                font-size: 16px;
+            }
+        }
+
+        .jss64 {
+            display: flex;
+            align-items: center;
+            padding-block: 12px;
+            justify-content: space-between;
+        }
+
+        @media (max-width:899.95px) {
+            .jss64 {
+                padding-block: 6px;
+            }
+        }
+
+        .jss65 {
+            font-size: 20px;
+        }
+
+        @media (max-width:899.95px) {
+            .jss65 {
+                font-size: 16px;
+            }
+        }
+
+        .jss66 {
+            font-size: 20px;
+        }
+
+        @media (max-width:899.95px) {
+            .jss66 {
+                font-size: 16px;
+            }
+        }
+
+        .jss67 {
+            width: 30px;
+            height: 30px;
+            margin-right: 0;
+        }
+
+        @media (max-width:899.95px) {
+            .jss67 {
+                width: 20px;
+                height: 20px;
+                margin-right: 4px;
+            }
+        }
+
+        .jss68 {
+            gap: 4rem;
+            display: grid;
+            align-items: center;
+            padding-bottom: 18px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @media (max-width:599.95px) {
+            .jss68 {
+                display: block;
+                margin-top: 12px;
+            }
+
+            .jss68>div {
+                margin-top: 12px;
+            }
+        }
+
+        .jss69 {
+            height: 100%;
+            padding: 32px;
+            background: white;
+            box-shadow: 0px 0px 8px lightgrey;
+            border-radius: 24px;
+        }
+
+        @media (max-width:599.95px) {
+            .jss69 {
+                height: 120px;
+                display: flex;
+                padding: 22px;
+            }
+        }
+
+        .jss70 {
+            gap: 2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        @media (max-width:599.95px) {
+            .jss70 {
+                gap: 1rem;
+            }
+        }
+
+        .jss71 {
+            color: #fff;
+            font-size: 60px;
+        }
+
+        @media (max-width:599.95px) {
+            .jss71 {
+                font-size: 32px;
+                text-align: center;
+            }
+        }
+
+        .jss72 {
+            position: relative;
+        }
+
+        .jss72>img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        @media (max-width:599.95px) {
+            .jss72>img {
+                height: 200px;
+            }
+        }
+
+        .jss73 {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            background-color: #00000057;
+        }
+
+        .jss74 {
+            width: 100%;
+            border-radius: 25px;
+        }
+
+        .jss75 {
+            width: 150px;
+            font-size: 20px;
+        }
+
+        @media (max-width:899.95px) {
+            .jss75 {
+                width: 110px;
+                font-size: 16px;
+            }
+        }
+
+        .jss76 {
+            color: #fff;
+            border: none;
+            background: #0078ae;
+            transition: 1s;
+            padding-inline: 30px;
+        }
+
+        .jss76:hover {
+            color: #fff;
+            border: none;
+            background: #0078ae;
+            box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+            transition: 1s;
+        }
+
+        .jss76:disabled {
+            color: white;
+            background: #AEAEAE;
+        }
+
+        .jss77 {
+            gap: 12px;
+            display: flex;
+            margin-top: 48px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .jss78 {
+            background: green;
+        }
+
+        .jss79 {
+            background: red;
+        }
+
+        .css-7avhyl {
+            display: inline-flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            background-color: transparent;
+            outline: 0px;
+            border: 0px;
+            margin: 0px;
+            cursor: pointer;
+            user-select: none;
+            vertical-align: middle;
+            appearance: none;
+            text-decoration: none;
+            padding: 9px;
+            border-radius: 50%;
+            color: rgb(105, 117, 134);
+        }
+
+        * {
+            font-family: "Kanit", sans-serif !important;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .bottom-nav {
+            display: none;
+        }
+
+        .css-1rzb3uu {
+            position: relative;
+            display: inline-flex;
+            vertical-align: middle;
+            flex-shrink: 0;
+        }
+
+        .css-qxzn03 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            -webkit-box-pack: center;
+            justify-content: center;
+            align-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            position: absolute;
+            box-sizing: border-box;
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            font-size: 0.75rem;
+            min-width: 20px;
+            line-height: 1;
+            height: 20px;
+            z-index: 1;
+            background-color: rgb(244, 67, 54);
+            color: rgb(255, 255, 255);
+            top: 0px;
+            right: 0px;
+            transform: scale(1) translate(50%, -50%);
+            transform-origin: 100% 0%;
+            padding: 0px 6px;
+            border-radius: 10px;
+            transition: transform 225ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+
+        @media (max-width: 599.95px) {
+            .jss37 {
+                font-size: 12px;
+                max-width: 85%;
+            }
+
+            .jss451 {
+                gap: 10px;
+                margin: 0;
+                padding: 5px;
+                padding-inline: 20px;
+            }
+
+            .jss57 {
+                font-weight: bold !important;
+                font-size: 16px !important;
+                padding-inline: 10px !important;
+                padding-block: 3px !important;
+                border-radius: 25px !important;
+                border: 1px solid black !important;
+                color: black !important;
+            }
+
+            .jss55 {
+                background-color: transparent;
+            }
+
+            .jss32 .tovar_img img {
+                width: 240px;
+                height: 140px !important;
+                object-fit: contain;
+                transform: rotate(90deg);
+                margin-left: -16px !important;
+            }
+
+            .jss34 img {
+                width: 110px !important;
+                height: 100px !important;
+                margin-right: 20px;
+            }
+
+            .tovar_img {
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+                border-radius: 11px;
+            }
+
+            .popular_img {
+                position: absolute;
+                top: -20px !important;
+                left: -10px !important;
+                display: block;
+            }
+
+            .popular_img img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .description_tovar {
+                position: relative;
+                padding: 2px 12px 12px;
+                margin: 0px;
+                justify-content: space-between;
+                flex-direction: column;
+                width: -webkit-fill-available;
+                display: flex;
+            }
+
+            .nav_activ {
+                color: rgb(255, 255, 255) !important;
+                background-color: rgb(229, 25, 55) !important;
+                border: none !important;
+            }
+        }
+
+        @media(max-width: 900px) {
+            .bottom-nav {
+                display: flex;
+            }
+
+            .footer-main {
+                display: none;
+            }
+        }
+
+        @media(max-width: 1200px) {
+            .footer-main .padding-inline {
+                padding-inline: 30px;
+            }
+
+            .footer-icons-sec img:nth-child(1) {
+                width: 45px;
+                height: 45px;
+            }
+
+            .footer-icons-sec img:nth-child(2) {
+                width: 82px;
+                height: 60px;
+            }
+
+            .footer-icons-sec img:nth-child(3) {
+                width: 50px;
+                height: 49px;
+            }
+
+            .footer-social img:nth-child(1) {
+                width: 35px;
+                height: 35px;
+            }
+
+            .footer-social img:nth-child(2) {
+                width: 35px;
+                height: 35px;
+            }
+
+            .footer-social img:nth-child(3) {
+                width: 35px;
+                height: 35px;
+            }
+
+            .footer-icons-sec .text-blue {
+                font-size: 14px;
+            }
+        }
+
+        .css-1m9pwf3 {
+            cursor: inherit;
+            position: absolute;
+            opacity: 0;
+            top: 0px;
+            left: 0px;
+            margin: 0px;
+            padding: 0px;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+        }
+
+        .css-14h0jh8 {
+            user-select: none;
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            fill: currentcolor;
+            flex-shrink: 0;
+            font-size: 1.5rem;
+            color: black;
+            transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .css-eyrlx6 {
+            display: inline-flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            background-color: transparent;
+            outline: 0px;
+            border: 0px;
+            cursor: pointer;
+            user-select: none;
+            vertical-align: middle;
+            appearance: none;
+            text-decoration: none;
+            padding: 9px;
+            border-radius: 50%;
+            color: rgb(105, 117, 134);
+            margin: 8px 8px -8px;
+        }
+
+        .jss36 {
+            font-weight: 500 !important;
+        }
+
+        .jss37 {
+            font-weight: 500;
+        }
+
+        .fs-18 {
+            font-weight: 600;
+        }
+    </style>
+    <style data-emotion="css-global" data-s=""></style>
+    <link rel="stylesheet" href="./cart.css">
+</head>
+
+
+<body style=""><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div class="Toastify"></div>
+        <div class="MuiBox-root css-9hh926">
+
+            <section class="header" id="header-destop">
+                <div style="padding-inline: 15px;">
+                    <div style="align-items: center; display: grid; grid-template-columns: 1fr 1fr 1fr;">
+                        <div style="display: flex; gap: 12px; align-items: center;">
+                            <div class="MuiStack-root css-1mzerio navbar-header"><a href="../service-method/">
+                                    <div class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault jss2 Kanit-Regular css-dt10u0 container-navabar-img"
+                                        style="background: rgb(227, 24, 54); color: rgb(255, 255, 255);">
+                                        <div class="MuiAvatar-root MuiAvatar-circular MuiChip-avatar MuiChip-avatarMedium MuiChip-avatarColorDefault jss3 css-1hdwea4"
+                                            style="width: 30px; height: 30px;"><img alt="bike"
+                                                src="../assets/image/bike-white.c750e44adb7ca082feca9c0ac6e6bd23.svg"
+                                                class="MuiAvatar-img css-1hy9t21"></div><span
+                                            class="MuiChip-label MuiChip-labelMedium css-k62kit"><span
+                                                class="aaasad">Home Delivery</span></span>
+                                    </div>
+                                </a><a href="../choose-store/">
+                                    <div class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault jss2 Kanit-Regular css-1e9y6v2 container-navabar-img"
+                                        style="background: rgb(255, 255, 255); outline: rgb(0, 120, 174) solid 1px; color: rgb(0, 120, 174);">
+                                        <div class="MuiAvatar-root MuiAvatar-circular MuiChip-avatar MuiChip-avatarMedium MuiChip-avatarColorDefault jss3 css-1hdwea4"
+                                            style="width: 30px; height: 30px;"><img alt="store"
+                                                src="../assets/image/shop-blue.6c03fcec101d19ac945e53c16ec7bd05.svg"
+                                                class="MuiAvatar-img css-1hy9t21"></div><span
+                                            class="MuiChip-label MuiChip-labelMedium css-14vsv3w"><span
+                                                class="aaasad select_address">Select Address</span></span>
+                                    </div>
+                                </a></div>
+                        </div>
+                        <div onclick="window.location='../'" style="display: flex; justify-content: center;"><img
+                                src="../assets/image/dominos_blue_logo.c0fd9781d3faea268710.webp" alt="Dominos Logo"
+                                width="178" height="38" style="cursor: pointer;"></div>
+                        <div style="display: flex; align-items: center; justify-content: flex-end;">
+                            <div class="header-icons"><a href="../stores/">
+                                    <div><img src="../assets/image/navbarlogo1.png" alt="Dominos Stores">
+                                        <p style="color: black;" class="p-style">Stores</p>
+                                    </div>
+                                </a><a href="../tracking/">
+                                    <div><img src="../assets/image/navbarlogo2.png" alt="Track">
+                                        <p style="color: black;" class="p-style">Tracker</p>
+                                    </div>
+                                </a>
+                                </a><a href="../favoritess/">
+                                    <div><i class='bx bx-heart'></i>
+                                        <p style="color: black;" class="p-style">Likes</p>
+                                    </div>
+                                </a>
+                                <div class="flag-wrapper">
+                                    <div style="cursor: pointer;">
+                                        <img src="../assets/image/britsht.png"
+                                            alt="ENG">
+                                        <p class="p-style">ENG</p>
+                                    </div>
+
+                                    <div class="tooltip-flag">
+                                        <div onclick="window.location='../geo/cart'">
+                                            <img class="img-postion-2" src="../assets/image/gruziya.png" alt="GEO">
+                                            <span class="text-postion-2">GEO</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="MuiStack-root css-16mqrq1 " aria-labelledby=":r2p"
+                                    style="position: relative;">
+
+                                    <span class="MuiBadge-root css-1afh8op">
+
+                                        <div class="cart-popup" style="display: none;">
+                                            <div class="triangle"></div>
+                                            <div class="cart-popup-img"
+                                                style="text-align: center; margin-bottom: 10px;">
+                                                <img src="../assets/image/empty_cart.ce51a99a8179668c0c85.png"
+                                                    alt="Empty Cart">
+                                            </div>
+                                            <div class="cart-item-map-container" style="display: none;">
+                                                <div class="item-card-container" style="display:block !important">
+                                                    <div class="img-cart-item">
+                                                        <img src="" alt="">
+                                                    </div>
+                                                    <div class="card-text-info-item">
+                                                        <p></p>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="card-price-item">
+                                                        <p class=" fs-18 text-red redflag" style="font-size: 15px;">
+                                                            <b></b>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="cart-order-container-btn">
+                                                <div class="view-btn"><button onclick="cartAddress()"
+                                                        class="view-cart-btn1">VIEW CART</button>
+                                                </div>
+                                                <div class="cart-total">
+                                                    <p>Total:<span class="redflag"> 0.00</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="cart-icon"
+                                            style="cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                                            <img src="../assets/image/cart.png" alt="Cart" style="display: block;">
+                                            <p class="kanit-Regular"
+                                                style="color: black; margin: 0px; text-align: center; white-space: nowrap; font-weight:500">
+                                                Cart
+                                            </p>
+                                        </div>
+
+                                        <span
+                                            class="MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorError css-qxzn03 countCart">0</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="header-mobile" id="header-mobile">
+                <div style="padding-inline: 0px;">
+                    <div style="align-items: center; display: block; grid-template-columns: 1fr 1fr 1fr;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;"><button
+                                onclick="openMenu()"
+                                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-148fdm8"
+                                tabindex="0" type="button"><svg
+                                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuIcon"
+                                    style="font-size: 2rem;">
+                                    <path d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"></path>
+                                </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+                            <div onclick="window.location='../'" style="display: flex; justify-content: center;"><img
+                                    src="../assets/image/dominos_blue_logo.c0fd9781d3faea268710.webp" alt="Dominos Logo"
+                                    width="126" height="27" style="cursor: pointer;"></div>
+                            <div style="width: 41px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <nav></nav>
+            </section>
+            <div class="categories-main" style="position: sticky; top: 0px; z-index: 1300; transition: 1s;">
+                <div class="nav_cards"
+                    style="display: flex; justify-content: space-between; padding-bottom: 12px; padding-top: 12px; align-items: center; overflow: scroll; gap: 12px; white-space: nowrap; box-shadow: rgb(173, 173, 173) 0px 2px 2px 0px; padding-inline: 50px;">
+                    <div><a href="../offers/" style="text-decoration: none;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <div><img class="navbar_for_img" src="../assets/image/Offer_in_active.svg" width="60" height="60" alt="OFFERS"
+                                        loading="eager"></div>
+                                <p class="category-title IBM-Regular"
+                                    style="font-weight: normal; font-size: 20px; color: rgb(0, 0, 0);">OFFERS</p>
+                            </div>
+                        </a></div>
+                    <div><a href="../pizza/" style="text-decoration: none;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <div><img class="navbar_for_img" src="../assets/image/pizza_inactive.svg" width="60" height="60" alt="Pizza"
+                                        loading="eager"></div>
+                                <p class="category-title IBM-Regular"
+                                    style="font-weight: normal; font-size: 20px; color: rgb(0, 0, 0);">Pizza</p>
+                            </div>
+                        </a></div>
+                    <div>
+                        <a href="../bread/" style="text-decoration: none;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <div><img class="navbar_for_img" src="../assets/image/bread_inactive.svg" width="60" height="60" alt="Bread"
+                                        loading="eager"></div>
+                                <p class="category-title IBM-Regular"
+                                    style="font-weight: normal; font-size: 20px; color: rgb(0, 0, 0);">Bread</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div><a href="../chicken/" style="text-decoration: none;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <div><img class="navbar_for_img" src="../assets/image/chicken_inactive.svg" width="60" height="60"
+                                        alt="Chicken" loading="eager"></div>
+                                <p class="category-title IBM-Regular"
+                                    style="font-weight: normal; font-size: 20px; color: rgb(0, 0, 0);">Chicken</p>
+                            </div>
+                        </a></div>
+                    <div><a href="../wrap/" style="text-decoration: none;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <div><img class="navbar_for_img" src="../assets/image/wrap_inactive.svg" width="60" height="60" alt="Wrap"
+                                        loading="eager"></div>
+                                <p class="category-title IBM-Regular"
+                                    style="font-weight: normal; font-size: 20px; color: rgb(0, 0, 0);">Wrap</p>
+                            </div>
+                        </a></div>
+                    <div><a href="../sandwich/" style="text-decoration: none;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <div><img class="navbar_for_img" src="../assets/image/sandwich_inactive.svg" width="60" height="60"
+                                        alt="Sandwich" loading="eager"></div>
+                                <p class="category-title IBM-Regular"
+                                    style="font-weight: normal; font-size: 20px; color: rgb(0, 0, 0);">Sandwich</p>
+                            </div>
+                        </a></div>
+                    <div><a href="../loadpotato/" style="text-decoration: none;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <div><img class="navbar_for_img" src="../assets/image/load_potato_inactive.svg" width="60" height="60"
+                                        alt="Load potato" loading="eager"></div>
+                                <p class="category-title IBM-Regular"
+                                    style="font-weight: normal; font-size: 20px; color: rgb(0, 0, 0);">Load potato</p>
+                            </div>
+                        </a></div>
+                    <div><a href="../dessert/" style="text-decoration: none;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <div><img class="navbar_for_img" src="../assets/image/dessert_inactive.svg" width="60" height="60"
+                                        alt="Dessert" loading="eager"></div>
+                                <p class="category-title IBM-Regular"
+                                    style="font-weight: normal; font-size: 20px; color: rgb(0, 0, 0);">Dessert</p>
+                            </div>
+                        </a></div>
+                    <div><a href="../drinks/" style="text-decoration: none;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <div><img class="navbar_for_img" src="../assets/image/drinks_inactive.svg" width="60" height="60" alt="Drinks"
+                                        loading="eager"></div>
+                                <p class="category-title IBM-Regular"
+                                    style="font-weight: normal; font-size: 20px; color: rgb(0, 0, 0);">Drinks</p>
+                            </div>
+                        </a></div>
+                    <div><a href="../sauce/" style="text-decoration: none;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <div><img class="navbar_for_img" src="../assets/image/sauce_inactive.svg" width="60" height="60" alt="Sauce"
+                                        loading="eager"></div>
+                                <p class="category-title IBM-Regular"
+                                    style="font-weight: normal; font-size: 20px; color: rgb(0, 0, 0);">Sauce</p>
+                            </div>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="jss1" id="no-cart-empty">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="empty_card">
+                        <div
+                            style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-block: 20px; row-gap: 12px;">
+                            <h2 class="Kanit-SemiBold text-blue" style="font-size: 36px; text-align: center;">Empty Cart
+                            </h2>
+                            <div style="display: flex; justify-content: center;"><img
+                                    src="../assets/image/empty_cart.ce51a99a8179668c0c85.png"
+                                    style="filter: grayscale(100%);"></div>
+                            <div>
+                                <h3 class=""
+                                    style="color: rgb(73, 73, 73); font-family: 'Kanit', sans-serif !important; font-size: 24px;">
+                                    Your Cart Is<span class=" text-red"
+                                        style="font-size: 24px;  font-family: 'Kanit', sans-serif !important;"> Empty!
+                                    </span></h3>
+                            </div>
+                            <div style="text-align: center;">
+                                <p class=" text-gray capitalize;" style="font-family: 'Kanit', sans-serif !important;">
+                                    Must Add Items On The Cart
+                                    Before You Proceed To Check Out</p>
+                            </div><button onclick="window.location='../'"
+                                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth Kanit-Regular fs-14 empty_btn css-13z6b64"
+                                tabindex="0" type="button"
+                                style="font-weight: bold;font-family: 'Kanit', sans-serif !important;color:white;border:none;text-transform: uppercase;">Back
+                                To Menu<span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="jss1" id="cart-container-empty">
+                <div class="jss58">
+                    <div class="jss59">
+                        <div>
+                            <div class="jss60"
+                                style="background: rgb(0, 120, 173); display: flex; justify-content: center; align-items: center;">
+                                <svg id="Layer_2" data-name="Layer 2" width="30" height="30"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.68 53.85">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                strokeWidth: 0px;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <path class="cls-1" fill="#fff"
+                                            d="m16.44,36.74c.9-.49,1.89-.33,2.84-.33,10.91,0,21.81-.04,32.72.03,1.99.01,3.06-.64,3.88-2.5,3.23-7.26,6.64-14.45,9.98-21.66,1.52-3.28,1.06-4.06-2.5-4.01-16.01.23-32.02.44-48.03.76-1.57.03-2.17-.47-2.43-1.9-.35-1.96-.89-3.88-1.21-5.84-.16-1-.47-1.37-1.66-1.28-2.59.19-5.18.27-7.77.03C1.02-.08,0,.21,0,1.52c0,1.17.81,1.45,1.83,1.44,1.93-.02,3.87.08,5.8-.04,1.17-.07,1.53.45,1.73,1.43,1.99,9.34,3.97,18.67,6.03,27.99.19.84-.2,1.69-.93,2.15-3.74,2.36-4.22,7.13-1.19,10.34,1.77,1.88,4.01,2.2,6.43,2.06.64-.04,1.5-.4,1.4,1-.25,3.59,1.69,5.96,4.69,5.94,2.84-.01,5.54-2.93,4.85-5.92-.24-1.05.23-1.06,1.01-1.05,5.24.02,10.48.01,15.89.01-.04.34-.05.47-.08.61-.68,3.22,1.1,5.91,4.21,6.34,2.66.36,4.99-1.7,5.21-4.61.26-3.4-1.47-5.25-4.96-5.26-5.66-.01-11.32,0-16.98,0-5.59,0-11.18.02-16.77-.02-2.07-.01-3.41-1.14-3.78-3.1-.35-1.86.43-3.2,2.06-4.08Zm14.03-17.12c1.38,1.47,2.73,2.91,4.11,4.38,3.24-3,6.46-5.99,9.72-9.02.84.92,1.68,1.82,2.53,2.74-4.15,3.85-8.28,7.67-12.44,11.53-2.21-2.36-4.42-4.71-6.64-7.09.93-.87,1.81-1.7,2.72-2.55Zm20.5,27.7c.68-.5,1.65-.51,2.34-.02.48.35.77.86.78,1.54.02,1.07-.88,1.99-1.96,1.97-1.13-.03-1.97-.75-1.93-1.97.02-.69.31-1.19.77-1.52Zm-25.09-.4c1.12.05,1.9.76,1.87,2-.02.76-.34,1.22-.82,1.53-.66.42-1.53.44-2.19.03-.53-.33-.83-.86-.8-1.67.05-1.23.79-1.95,1.95-1.9Z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p class=""
+                                style="font-weight: bold; cursor: pointer; font-family: 'Kanit', sans-serif !important;font-weight:500;">
+                                My Cart</p>
+                        </div>
+                        <div style="display: none;">
+                            <div class="jss60"
+                                style="background: rgb(224, 224, 224); display: flex; justify-content: center; align-items: center;">
+                                <svg id="Layer_2" data-name="Layer 2" width="30" height="30"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.8 180.8">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                strokeWidth: 0px;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <path class="cls-1" fill="#fff"
+                                            d="m132.09,0H4.71C2.12,0,0,2.12,0,4.71v171.38c0,2.59,2.12,4.71,4.71,4.71h127.38c2.59,0,4.71-2.12,4.71-4.71V4.71c0-2.59-2.12-4.71-4.71-4.71ZM38.75,143.39l-.02.1c-.13.5-.39.98-.73,1.32-3.82,3.85-7.66,7.68-11.5,11.51-.32.32-.71.64-1.18.97-.47.33-1.01.49-1.56.49s-1.1-.17-1.57-.5c-.45-.32-.79-.6-1.09-.9-1.82-1.8-3.64-3.61-5.44-5.43-.97-.99-1.25-2.22-.78-3.47.36-.96,1.28-1.72,2.34-1.95.69-.15,1.41-.01,2.01.37.47.3.86.62,1.28.96l.24.19c.93.89,1.78,1.75,2.63,2.61l.38.39,9.12-9.12c.2-.2.4-.38.61-.56,1.09-.91,2.64-1.02,3.86-.28,1.15.7,1.7,1.99,1.41,3.29Zm0-41l-.02.1c-.13.5-.39.98-.73,1.32-3.82,3.85-7.66,7.68-11.5,11.51-.32.32-.71.64-1.18.97-.47.33-1.01.49-1.56.49s-1.1-.17-1.57-.5c-.45-.32-.79-.6-1.09-.9-1.82-1.8-3.64-3.61-5.44-5.43-.97-.99-1.25-2.22-.78-3.47.36-.96,1.28-1.72,2.34-1.95.69-.15,1.41-.01,2.01.37.47.3.86.62,1.28.96l.24.19c.93.89,1.78,1.75,2.63,2.61l.38.39,9.12-9.12c.2-.2.4-.38.61-.56,1.09-.91,2.64-1.02,3.86-.28,1.15.7,1.7,1.99,1.41,3.29Zm0-41l-.02.1c-.13.5-.39.98-.73,1.32-3.82,3.85-7.66,7.68-11.5,11.51-.32.32-.71.64-1.18.97-.47.33-1.01.49-1.56.49s-1.1-.17-1.57-.5c-.45-.32-.79-.6-1.09-.9-1.82-1.8-3.64-3.61-5.44-5.43-.97-.99-1.25-2.22-.78-3.47.36-.96,1.28-1.72,2.34-1.95.69-.15,1.41-.01,2.01.37.47.3.86.62,1.28.96l.24.19c.93.89,1.78,1.75,2.63,2.61l.38.39,9.12-9.12c.2-.2.4-.38.61-.56,1.09-.91,2.64-1.02,3.86-.28,1.15.7,1.7,1.99,1.41,3.29Zm0-36l-.02.1c-.13.5-.39.98-.73,1.32-3.82,3.85-7.66,7.68-11.5,11.51-.32.32-.71.64-1.18.97-.47.33-1.01.49-1.56.49s-1.1-.17-1.57-.5c-.45-.32-.79-.6-1.09-.9-1.82-1.8-3.64-3.61-5.44-5.43-.97-.99-1.25-2.22-.78-3.47.36-.96,1.28-1.72,2.34-1.95.69-.15,1.41-.01,2.01.37.47.3.86.62,1.28.96l.24.19c.93.89,1.78,1.75,2.63,2.61l.38.39,9.12-9.12c.2-.2.4-.38.61-.56,1.09-.91,2.64-1.02,3.86-.28,1.15.7,1.7,1.99,1.41,3.29Zm76.31,128.79h-59.74c-1.96,0-3.57-1.61-3.57-3.57s1.61-3.57,3.57-3.57h59.74c1.96,0,3.57,1.61,3.57,3.57s-1.61,3.57-3.57,3.57Zm0-41h-59.74c-1.96,0-3.57-1.61-3.57-3.57s1.61-3.57,3.57-3.57h59.74c1.96,0,3.57,1.61,3.57,3.57s-1.61,3.57-3.57,3.57Zm0-41h-59.74c-1.96,0-3.57-1.61-3.57-3.57s1.61-3.57,3.57-3.57h59.74c1.96,0,3.57,1.61,3.57,3.57s-1.61,3.57-3.57,3.57Zm0-36h-59.74c-1.96,0-3.57-1.61-3.57-3.57s1.61-3.57,3.57-3.57h59.74c1.96,0,3.57,1.61,3.57,3.57s-1.61,3.57-3.57,3.57Z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p class=""
+                                style="cursor: pointer; font-weight: bold;font-family: 'Kanit', sans-serif !important;font-weight:500;">
+                                Order Details</p>
+                        </div>
+                        <div  style="display: none ;cursor: auto; text-align: center; white-space: nowrap;">
+                            <div class="jss60"
+                                style="background: rgb(224, 224, 224); display: flex; justify-content: center; align-items: center; padding-left: 6px;">
+                                <svg id="Layer_2" data-name="Layer 2" width="30" height="30"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.46 180.8">
+                                    <defs>
+                                        <style>
+                                            .cls-1,
+                                            .cls-2 {
+                                                strokeWidth: 1;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <path class="cls-2" fill="#fff"
+                                            d="m136.48,91.95c-23.04.02-41.41,18.2-41.41,41,0,23.04,18.75,41.76,41.65,41.56,22.69-.2,40.78-18.75,40.74-41.79-.04-22.67-18.25-40.79-40.98-40.77Zm-4.84,61.62c-5.29-5.28-10.77-10.74-16.19-16.14,2.62-2.56,5.41-5.28,8.55-8.35,2.13,2.49,4.34,5.08,6.34,7.42,6.06-6.12,16.7-16.82,22.42-22.61,3.87,3.89,6.63,6.67,9.3,9.37-8.57,8.54-22.12,22.05-30.43,30.32Z">
+                                        </path>
+                                        <path class="cls-1" fill="#fff"
+                                            d="m132.09,0H4.71c-.19,0-.37.01-.55.03C1.75.3,0,2.49,0,4.92v168.17c0,5.59,2.12,7.71,4.71,7.71h127.38c.61,0,1.19-.13,1.72-.34-24.87-1.34-44.76-22.15-44.76-47.55,0-26.13,21.05-46.97,47.46-46.99.1,0,.19,0,.29,0V4.71c0-2.59-2.12-4.71-4.71-4.71ZM36.77,118.64h-17.46v-17.46h17.46v17.46Zm0-38h-17.46v-17.46h17.46v17.46Zm0-37h-17.46v-17.46h17.46v17.46Zm48,75h-35.46v-17.46h35.46v17.46Zm33-38H49.31v-17.46h68.46v17.46Zm0-37H49.31v-17.46h68.46v17.46Z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p class=""
+                                style="cursor: pointer; white-space: nowrap; font-weight: bold; text-transform: capitalize;font-family: 'Kanit', sans-serif !important;font-weight:500;">
+                                Order Confirmation</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="ordersContainer"></div>
+                <div id="ordersContainerCart"></div>
+
+
+
+
+
+
+                <div class="MuiDialog-container MuiDialog-scrollPaper css-ekeie0" role="presentation" tabindex="-1"
+                    style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);">
+                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm css-yv7evq"
+                        role="dialog" aria-labelledby=":r1v:">
+                        <h2 class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-dv8akh" id=":r1v:"><span
+                                class="text-black" style="font-size: 32px;">Empty cart</span></h2>
+                        <div class="MuiDialogContent-root css-16q22cy">
+                            <p
+                                class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-fu9j73">
+                                <span class="">Are you sure?</span></p>
+                        </div>
+                        <div style="display: flex; justify-content: center; gap: 1rem; padding: 12px;"><button
+                                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary jss1508 css-1bfuqwl"
+                                tabindex="0" type="button" style="border-radius: 30px;" onclick="calcels()">Cancel<span
+                                    class="MuiTouchRipple-root css-w0pj6f"></span></button><button
+                                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary jss1509 css-1bfuqwl"
+                                tabindex="0" type="button" onclick="removeAll()">Empty!<span
+                                    class="MuiTouchRipple-root css-w0pj6f"></span></button></div>
+                    </div>
+                </div>
+
+                <div class="MuiBox-root css-1djk842"><button onclick="removeCart()"
+                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary  jss8 css-1bfuqwl"
+                        tabindex="0" type="button" style="border-radius: 30px; font-size: 16px;">Empty cart<span
+                            class="MuiTouchRipple-root css-w0pj6f"></span></button></div><br>
+
+
+                <div style="display: none;" class="MuiBox-root css-gzlndu">
+                    <h1 class="" style="font-size: 36px;font-family: 'Kanit', sans-serif !important;font-weight:500;">
+                        Goes Well
+                        Together</h1><br>
+                    <div class="jss30" style="padding: 0px;">
+                        <div class="jss32">
+                            <div class="jss34">
+                                <div class="jss35"><label
+                                        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1tuw01h"><span
+                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-7avhyl"
+                                            aria-label="Add/Remove product from favorites" style="z-index: 1;"><input
+                                                class="PrivateSwitchBase-input css-1m9pwf3" name="favorite"
+                                                type="checkbox" data-indeterminate="false"><svg
+                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-14h0jh8"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                data-testid="FavoriteBorderIcon">
+                                                <path
+                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3m-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05">
+                                                </path>
+                                            </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></span><span
+                                            class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-9l3uo3"></span></label>
+                                </div>
+                                <div style="display: flex; justify-content: center;"><img
+                                        src="https://deykvccewcmn1.cloudfront.net/Lavacake.webp" loading="lazy"
+                                        alt="Lava Cake" decoding="async"
+                                        style="width: 220px; height: 120px; object-fit: contain; aspect-ratio: 1.5 / 1;">
+                                </div>
+                                <div style="min-height: 110px; display: flex; flex-direction: column;">
+                                    <div style="flex: 1 1 0%;">
+                                        <p class="jss36 Kanit-Regular text-trauncate" style="font-weight: bold;">Lava
+                                            Cake</p>
+                                        <p class="jss37 text-trauncate"></p>
+                                    </div>
+                                    <div class="jss40">
+                                        <div>
+                                            <p class=" fs-18 text-red">8.90<b>₾</b></p>
+                                        </div><button class="jss41 " aria-label="Add to cart">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="position: absolute; top: 10px; left: 10px; display: block;"></div>
+                        </div>
+                        <div class="jss32">
+                            <div class="jss34">
+                                <div class="jss35"><label
+                                        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1tuw01h"><span
+                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-7avhyl"
+                                            aria-label="Add/Remove product from favorites" style="z-index: 1;"><input
+                                                class="PrivateSwitchBase-input css-1m9pwf3" name="favorite"
+                                                type="checkbox" data-indeterminate="false"><svg
+                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-14h0jh8"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                data-testid="FavoriteBorderIcon">
+                                                <path
+                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3m-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05">
+                                                </path>
+                                            </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></span><span
+                                            class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-9l3uo3"></span></label>
+                                </div>
+                                <div style="display: flex; justify-content: center;"><img
+                                        src="https://deykvccewcmn1.cloudfront.net/coca_cola_classic_the_coca_cola_company_30.webp"
+                                        loading="lazy" alt="Coca-Cola 0.33L" decoding="async"
+                                        style="width: 220px; height: 120px; object-fit: contain; aspect-ratio: 1.5 / 1;">
+                                </div>
+                                <div style="min-height: 110px; display: flex; flex-direction: column;">
+                                    <div style="flex: 1 1 0%;">
+                                        <p class="jss36 Kanit-Regular text-trauncate" style="font-weight: bold;">
+                                            Coca-Cola 0.33L</p>
+                                        <p class="jss37 text-trauncate"></p>
+                                    </div>
+                                    <div class="jss40">
+                                        <div>
+                                            <p class=" fs-18 text-red">3.50<b>₾</b></p>
+                                        </div><button class="jss41 " aria-label="Add to cart">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="position: absolute; top: 10px; left: 10px; display: block;"></div>
+                        </div>
+                        <div class="jss32">
+                            <div class="jss34">
+                                <div class="jss35"><label
+                                        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1tuw01h"><span
+                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-7avhyl"
+                                            aria-label="Add/Remove product from favorites" style="z-index: 1;"><input
+                                                class="PrivateSwitchBase-input css-1m9pwf3" name="favorite"
+                                                type="checkbox" data-indeterminate="false"><svg
+                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-14h0jh8"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                data-testid="FavoriteBorderIcon">
+                                                <path
+                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3m-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05">
+                                                </path>
+                                            </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></span><span
+                                            class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-9l3uo3"></span></label>
+                                </div>
+                                <div style="display: flex; justify-content: center;"><img
+                                        src="https://deykvccewcmn1.cloudfront.net/coca-cola 1L.webp" loading="lazy"
+                                        alt="Coca-Cola 1L" decoding="async"
+                                        style="width: 220px; height: 120px; object-fit: contain; aspect-ratio: 1.5 / 1;">
+                                </div>
+                                <div style="min-height: 110px; display: flex; flex-direction: column;">
+                                    <div style="flex: 1 1 0%;">
+                                        <p class="jss36 Kanit-Regular text-trauncate" style="font-weight: bold;">
+                                            Coca-Cola 1L</p>
+                                        <p class="jss37 text-trauncate"></p>
+                                    </div>
+                                    <div class="jss40">
+                                        <div>
+                                            <p class=" fs-18 text-red">5.30<b>₾</b></p>
+                                        </div><button class="jss41 " aria-label="Add to cart">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="position: absolute; top: 10px; left: 10px; display: block;"></div>
+                        </div>
+                        <div class="jss32">
+                            <div class="jss34">
+                                <div class="jss35"><label
+                                        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1tuw01h"><span
+                                            class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-7avhyl"
+                                            aria-label="Add/Remove product from favorites" style="z-index: 1;"><input
+                                                class="PrivateSwitchBase-input css-1m9pwf3" name="favorite"
+                                                type="checkbox" data-indeterminate="false"><svg
+                                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-14h0jh8"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                data-testid="FavoriteBorderIcon">
+                                                <path
+                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3m-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05">
+                                                </path>
+                                            </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></span><span
+                                            class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-9l3uo3"></span></label>
+                                </div>
+                                <div style="display: flex; justify-content: center;"><img
+                                        src="https://deykvccewcmn1.cloudfront.net/20250319082317949_cocacola500mlclassic.webp"
+                                        loading="lazy" alt="Coca-Cola 0.5L" decoding="async"
+                                        style="width: 220px; height: 120px; object-fit: contain; aspect-ratio: 1.5 / 1;">
+                                </div>
+                                <div style="min-height: 110px; display: flex; flex-direction: column;">
+                                    <div style="flex: 1 1 0%;">
+                                        <p class="jss36 Kanit-Regular text-trauncate" style="font-weight: bold;">
+                                            Coca-Cola 0.5L</p>
+                                        <p class="jss37 text-trauncate">Coca-Cola 0.5L</p>
+                                    </div>
+                                    <div class="jss40">
+                                        <div>
+                                            <p class=" fs-18 text-red">3.90<b>₾</b></p>
+                                        </div><button class="jss41 " aria-label="Add to cart">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="position: absolute; top: 10px; left: 10px; display: block;"><img
+                                    src="data:image/png;base64,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"
+                                    alt="New" height="70" width="70px"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-g1zth1">
+                    <div class="MuiBox-root css-j63orb">
+                        <h1 class=" text-black" style="font-size: 36px; font-weight: 400">Checkout</h1>
+                        <div>
+                            <div class="cart_cards" style="">
+                                </div><br>
+                            <h3 class=" fs-24 text-black weight_400">Total: <span class="text-red subTotal" >335.10₾</span></h3>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div onclick="payment_page()" style="margin-top: 28px; margin-bottom: 60px;"><button style="width: 100%;height: 60px;"
+                        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth  fs-24 jss8 css-np2orv"
+                        tabindex="0" type="button">Next<span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="footer-main" style="margin-top: 0px;" id="footer-destop">
+        <div class="footer-inner padding-inline">
+            <div class="footer-content">
+                <div class="footer-list-container">
+                    <ul class="footer-list">
+                        <li><a href="../about/"><span class="span-li footer-p-style">About Domino's</span></a></li>
+                        <li><span class="span-li footer-p-style" style="cursor: default;">Hygiene Certificate</span>
+                        </li>
+                        <li><a href="../join-our-team/"><span class="span-li footer-p-style">Join Our Team</span></a>
+                        </li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li><a href="../terms-and-conditions/"><span class="span-li footer-p-style ">Terms and
+                                    Conditions</span></a>
+                        </li>
+                        <li><a href="../privacy-policy/"><span class="span-li footer-p-style">Privacy Policy</span></a>
+                        </li>
+                        <li><a href="../delivery-policy/"><span class="span-li footer-p-style">Delivery
+                                    Policy</span></a></li>
+                        <li><a href="../return-policy/"><span class="span-li footer-p-style">Return Policy</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-icons-sec">
+                    <div style="display: flex; align-items: center; gap: 18px;"><img
+                            src="../assets/image/halal.708164dc956fb390d017.webp" alt="Halal" width="62" height="62"
+                            loading="lazy"><img src="../assets/image/time.8f2b09be0b7041d86372.webp" alt="30-min"
+                            width="104" height="76" loading="lazy"><img
+                            src="../assets/image/pizza_oven.3bd307ade23251814945.webp" alt="oven" width="59" height="58"
+                            loading="lazy"></div>
+                    <p class=" text-blue footer-p-style" style="text-align: center; font-weight:300">©
+                        Geopizza LLC All rights reserved
+                        2025 | Developed by <a href=""  rel="noreferrer"
+                            class="text-blue hover-underline footer-p-style"> HiTech Prime </a></p>
+                </div>
+                <div class="footer-social-sec Kanit-SemiBold">
+                    <div style="display: flex; align-items: center; justify-content: flex-start; gap: 18px;"><a
+                            href=""  rel="noreferrer"><img
+                                src="../assets/image/facebook.afa882cddf3eb3b9aafc.webp" alt="Facebook" width="43"
+                                height="43" loading="lazy"></a><a href=""
+                             rel="noreferrer"><img
+                                src="../assets/image/instagram.66021d99fd4d624741e6.webp" alt="Instagram" width="43"
+                                height="43" loading="lazy"></a><a href=""
+                             rel="noreferrer"><img src="../assets/image/tiktok.adab40c4bec32de925ff.webp"
+                                alt="Tiktok" width="43" height="43" loading="lazy"></a></div>
+                    <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                        <div style="text-align: start;"><a href="tel:032 2 99 88 88">
+                                <div style="display: flex; justify-content: center; align-items: center; gap: 8px;">
+                                    <div><img src="../assets/image/phone_call_1.38932115677a1630e6d1.webp" alt="Phone"
+                                            width="20" height="20" loading="lazy"></div>
+                                    <p style="font-size: 16px; font-weight:600" class="footer-p-style">032 2 99 88 88
+                                    </p>
+                                </div>
+                            </a>
+                            <div style="display: flex; justify-content: center; align-items: center; gap: 8px;">
+                                <div><img src="../assets/image/mail.74f86af7c0ea74279ad3.webp" alt="Mail" width="20"
+                                        height="20" loading="lazy"></div>
+                                <p style="font-size: 16px; font-weight:600"><a class="text-blue footer-p-style"
+                                        href="mailto:info@dominospizza.ge">info@dominospizza.ge</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="position: fixed; bottom: 70px; right: 4px; display: flex; justify-content: flex-end;"
+        id="massage-mobile">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <div><a href=""  rel="noopener noreferrer"><img
+                        src="../assets/image/messenger.bdb78ff46cdfba34c11a.png" height="40" width="40" alt="messenger"
+                        loading="lazy"></a></div>
+            <p style="font-size: 12px; " class="footer-p-style">Contact Us</p>
+        </div>
+    </div>
+    <div style="position: fixed; bottom: 70px; right: 20px; display: flex; justify-content: flex-end;"
+        id="message-destop">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <div><a href=""  rel="noopener noreferrer"><img
+                        src="../assets/image/messenger.bdb78ff46cdfba34c11a.png" height="60" width="60" alt="messenger"
+                        loading="lazy"></a></div>
+            <p style="font-size: 16px; " class="footer-p-style">Contact Us</p>
+        </div>
+    </div>
+    <div class="bottom-nav">
+            <div
+                style="border-radius: 100px; padding: 8px; display: flex; justify-content: center; align-items: center; background: rgb(0, 120, 174);">
+                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="30"
+                    height="30">
+                    <path fill="#fff"
+                        d="m38.92,17.4h0S22.6,1.08,22.6,1.08c-.7-.7-1.62-1.08-2.6-1.08s-1.91.38-2.6,1.08L1.09,17.39s-.01.01-.02.02c-1.43,1.44-1.43,3.77,0,5.2.65.65,1.52,1.03,2.44,1.07.04,0,.08,0,.11,0h.65v12.01c0,2.38,1.93,4.31,4.31,4.31h6.38c.65,0,1.17-.52,1.17-1.17v-9.41c0-1.08.88-1.97,1.97-1.97h3.77c1.08,0,1.97.88,1.97,1.97v9.41c0,.65.52,1.17,1.17,1.17h6.38c2.38,0,4.31-1.93,4.31-4.31v-12.01h.6c.98,0,1.91-.38,2.6-1.08,1.43-1.44,1.43-3.77,0-5.21Z">
+                    </path>
+                </svg>
+            </div>
+            <div
+                style="border-radius: 100px; padding: 8px; display: flex; justify-content: center; align-items: center; background: rgb(0, 120, 174);">
+                <img src="https://dominospizza.ge/static/media/shop-white.f9932044a442888258cf4888ce686068.svg"
+                    alt="BUY FROM BRANCH" style="height: 38px; width: 38px; object-fit: contain;">
+            </div>
+            <div
+                style="border-radius: 100px; padding: 8px; display: flex; justify-content: center; align-items: center; background: rgb(0, 120, 174);">
+                <svg width="30" height="30" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 38.47 38.47">
+                    <path fill="#fff"
+                        d="m32.83,24.87h-1.33c-.47-1.31-1.71-2.25-3.17-2.25s-2.71.95-3.17,2.25h-2.46c-1.24,0-2.25-1.01-2.25-2.25s1.01-2.25,2.25-2.25h7.89c.36,0,.75-.25.9-.45l5.41-7.29c1.03-1.37,1.58-3.01,1.58-4.73,0-4.35-3.54-7.89-7.89-7.89s-7.89,3.54-7.89,7.89c0,1.72.54,3.36,1.58,4.73l4.06,5.49h-5.64c-2.49,0-4.51,2.02-4.51,4.51s2.02,4.51,4.51,4.51h2.46c.47,1.31,1.71,2.25,3.17,2.25s2.71-.95,3.17-2.25h1.33c1.86,0,3.38,1.52,3.38,3.38s-1.52,3.46-3.38,3.46h-8.1c-.47-1.31-1.71-2.25-3.17-2.25s-2.71.95-3.17,2.25h-8.25l4.06-5.49c1.03-1.37,1.58-3.01,1.58-4.73,0-4.35-3.54-7.89-7.89-7.89S0,19.39,0,23.74c0,1.72.54,3.36,1.58,4.73.13.17,5.44,7.36,5.61,7.49,0,0,.28.25.71.25h10.5c.47,1.31,1.71,2.25,3.17,2.25s2.71-.95,3.17-2.25h8.1c3.11,0,5.64-2.6,5.64-5.71s-2.53-5.64-5.64-5.64Zm-5.64-16.98c0-1.86,1.52-3.38,3.38-3.38s3.38,1.52,3.38,3.38-1.52,3.38-3.38,3.38-3.38-1.52-3.38-3.38ZM7.89,27.12c-1.86,0-3.38-1.52-3.38-3.38s1.52-3.38,3.38-3.38,3.38,1.52,3.38,3.38-1.52,3.38-3.38,3.38Z">
+                    </path>
+                    <path fill="#fff"
+                        d="m30.58,6.76c-.62,0-1.13.51-1.13,1.13s.51,1.13,1.13,1.13,1.13-.51,1.13-1.13-.51-1.13-1.13-1.13Z">
+                    </path>
+                    <path fill="#fff"
+                        d="m7.89,22.62c-.62,0-1.13.51-1.13,1.13s.51,1.13,1.13,1.13,1.13-.51,1.13-1.13-.51-1.13-1.13-1.13Z">
+                    </path>
+                </svg>
+            </div>
+            <div
+                style="border-radius: 100px; padding: 8px; display: flex; justify-content: center; align-items: center; background: rgb(0, 120, 174);">
+                <span class="MuiBadge-root css-1rzb3uu"><svg width="30" height="30" id="Layer_1" data-name="Layer 1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.93 448.9">
+                        <path fill="#fff"
+                            d="m19.52,0C8.74,0,0,8.74,0,19.52s8.74,19.52,19.52,19.52h34.73c5.83,0,11,3.73,12.84,9.26l64.35,193.08c2.86,8.57,3.22,17.8,1.03,26.57l-5.3,21.23c-7.77,31.1,16.43,62.14,48.49,62.14h234.21c10.78,0,19.52-8.74,19.52-19.52s-8.74-19.52-19.52-19.52h-234.21c-7.6,0-12.48-6.24-10.64-13.61l4-15.96c1.39-5.56,6.39-9.47,12.13-9.47h209.2c8.4,0,15.87-5.37,18.53-13.34l52.03-156.14c4.22-12.64-5.2-25.7-18.53-25.69H127.93c-5.83,0-11-3.73-12.84-9.26l-18.49-55.47C93.94,5.37,86.47,0,78.07,0H19.52Zm136.62,370.83c-21.56,0-39.03,17.48-39.03,39.03s17.48,39.03,39.03,39.03,39.03-17.48,39.03-39.03-17.48-39.03-39.03-39.03Zm234.21,0c-21.56,0-39.03,17.48-39.03,39.03s17.48,39.03,39.03,39.03,39.03-17.48,39.03-39.03-17.48-39.03-39.03-39.03Z">
+                        </path>
+                    </svg><span
+                        class="MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorError css-qxzn03 countCartMobile">0</span></span>
+            </div>
+        </div>
+    </div>
+
+        <div class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation16 MuiDrawer-paper MuiDrawer-paperAnchorLeft css-15xvzt3"
+            tabindex="-1" style="transform: none; transition: transform 225ms cubic-bezier(0, 0, 0.2, 1);"
+            id="menuClose" onclick="menuClose()">
+            <div onclick="black_none()" class="for_navbar_black"></div>
+            <div class="sideBar_containe">
+                <div><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1yxmbwk"
+                        tabindex="0" type="button" style="padding-left: 30px; padding-top: 22px;"><svg
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
+                            aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuIcon" style="font-size: 2rem;">
+                            <path d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"></path>
+                        </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+
+                    <div class="top_flag-icon">
+                                <div class="lang_Ge"><img src="../assets/image/britsht.png" loading="lazy" height="26"
+                                width="26" alt="flag ge"></div>
+                        <div onclick="window.location='../geo/cart'" class="lang_Ge"><img src="../assets/image/gruziya.png" loading="lazy" height="26"
+                                width="26" alt="flag ge"></div>
+                    </div>
+                    <hr class="MuiDivider-root MuiDivider-fullWidth css-mf11to">
+                    <div class="scrollable">
+                        <div class="user-tooltip"><a >
+                                <li class="MuiListItem-root MuiListItem-gutters css-qfmzwt">
+                                    <div class="MuiListItemIcon-root list_item_icon css-kj3bb2"
+                                        style="padding-left: 32px; width: 20px; height: 20px; padding-right: 25px; font-size: 16px;">
+                                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="DescriptionOutlinedIcon">
+                                            <path
+                                                d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8zm4 18H6V4h7v5h5z">
+                                            </path>
+                                        </svg>
+                                    </div><span class="list_item_text">Order History</span>
+                                </li>
+                            </a><a href="../favoritess/">
+                                <li class="MuiListItem-root MuiListItem-gutters css-qfmzwt">
+                                    <div class="MuiListItemIcon-root list_item_icon css-kj3bb2"
+                                        style="padding-left: 32px; width: 20px; height: 20px; padding-right: 25px; font-size: 16px;">
+                                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="FavoriteBorderOutlinedIcon">
+                                            <path
+                                                d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3m-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05">
+                                            </path>
+                                        </svg>
+                                    </div><span class="list_item_text">Favorites</span>
+                                </li>
+                            </a><a >
+                                <li class="MuiListItem-root MuiListItem-gutters css-qfmzwt">
+                                    <div class="MuiListItemIcon-root list_item_icon css-kj3bb2"
+                                        style="padding-left: 32px; width: 20px; height: 20px; padding-right: 25px; font-size: 16px;">
+                                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="RedeemOutlinedIcon">
+                                            <path
+                                                d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2m-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1M9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1m11 15H4v-2h16zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20z">
+                                            </path>
+                                        </svg>
+                                    </div><span class="list_item_text">Rewards</span>
+                                </li>
+                            </a>
+                        </div>
+                        <hr class="MuiDivider-root MuiDivider-fullWidth css-mf11to">
+                        <div class="list_item">
+                            <ul class="list_item_ul">
+                                <li><a href="../about/"><span class="span-li Kanit-Extra-Light fs-16 text-blue">About
+                                            Domino's</span></a></li>
+                                <li><a href="../stores/"><span
+                                            class="span-li Kanit-Extra-Light fs-16 text-blue">Stores</span></a></li>
+                                <li><span class="span-li Kanit-Extra-Light fs-16 text-blue">Hygiene Certificate</span>
+                                </li>
+                                <li><a href="../join-our-team/"><span
+                                            class="span-li Kanit-Extra-Light fs-16 text-blue">Join Our Team</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="MuiDivider-root MuiDivider-fullWidth css-mf11to">
+                        <div class="list_item">
+                            <ul class="list_item_ul">
+                                <li><a href="../terms-and-conditions/"><span
+                                            class="span-li Kanit-Extra-Light fs-16 text-blue">Terms and
+                                            Conditions</span></a></li>
+                                <li><a href="../privacy-policy"><span
+                                            class="span-li Kanit-Extra-Light fs-16 text-blue">Privacy Policy</span></a>
+                                </li>
+                                <li><a href="../delivery-policy/"><span
+                                            class="span-li Kanit-Extra-Light fs-16 text-blue">Delivery Policy</span></a>
+                                </li>
+                                <li><a href="../return-policy/"><span
+                                            class="span-li Kanit-Extra-Light fs-16 text-blue">Return Policy</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="MuiDivider-root MuiDivider-fullWidth css-mf11to">
+                <div class="footer" style="position: absolute; left: 40px; margin-top: 20px;">
+                    <div style="display: flex; align-items: center; gap: 18px;"><a href=""
+                             rel="noreferrer"><img
+                                src="../assets/image/facebook.afa882cddf3eb3b9aafc.webp" alt="Facebook" width="25"
+                                height="25" loading="lazy"></a><a href="" 
+                            rel="noreferrer"><img src="../assets/image/instagram.66021d99fd4d624741e6.webp"
+                                alt="Instagram" width="25" height="25" loading="lazy"></a><a
+                            href=""  rel="noreferrer"><img
+                                src="../assets/image/tiktok.adab40c4bec32de925ff.webp" alt="Tiktok" width="25"
+                                height="25" loading="lazy"></a></div>
+                    <div><a href="tel:032 2 99 88 88">
+                            <p class="Kanit-Regular fs-16 text-blue" style="font-weight: 400;">032 2 99 88 88</p>
+                        </a></div>
+                    <div><a href="mailto:info@dominospizza.ge">
+                            <p class="Kanit-Regular fs-16 text-blue" style="font-weight: 400;">info@dominospizza.ge</p>
+                        </a></div>
+                    <div style="text-align: center;">
+                        <div style="display: flex; align-items: center; gap: 4px;">
+                            <div class="Kanit-Regular fs-16 text-gray"
+                                style="display: flex; align-items: center; gap: 4px;"><svg
+                                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-14enq8" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="AccessAlarmOutlinedIcon">
+                                    <path
+                                        d="m22 5.72-4.6-3.86-1.29 1.53 4.6 3.86zM7.88 3.39 6.6 1.86 2 5.71l1.29 1.53zM12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9m0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7">
+                                    </path>
+                                </svg>
+                                <p class="Kanit-Regular fs-16 text-gray" style="font-weight: 300;">11:00 </p>
+                            </div>
+                            <div class="Kanit-Regular fs-16 text-gray"
+                                style="display: flex; align-items: center; gap: 4px;"><svg
+                                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1mtjo9i" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="AccessAlarmOutlinedIcon">
+                                    <path
+                                        d="m22 5.72-4.6-3.86-1.29 1.53 4.6 3.86zM7.88 3.39 6.6 1.86 2 5.71l1.29 1.53zM12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9m0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7">
+                                    </path>
+                                </svg>
+                                <p class="Kanit-Regular fs-16 text-gray" style="font-weight: 300;">01:30 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+    <script>
+        localStorage.removeItem("for_id")
+        localStorage.removeItem("edit")
+        localStorage.removeItem("selectedProduct")
+        localStorage.removeItem("selectedPizzaSize")
+    </script>
+
+    <script src="../assets/js/terms-main.js"></script>
+
+    <script src="../assets/js/addCart.js"></script>
+
+    <script src="./cart.js"></script>
+
+</body>
+
+</html>
