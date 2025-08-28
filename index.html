@@ -5269,19 +5269,19 @@
             window.location.href = './cart/'
         }
 
-        // JSON fayllarni import qilish va localStorage ga saqlash
+        // Импортируйте файлы JSON и сохраните их в localStorage
 
-        // JSON fayllarni yuklash va localStorage ga saqlash
+       // Загрузить JSON-файлы и сохранить их в localStorage
         async function loadAndSaveAllProducts() {
             try {
-                // data.json ni yuklash (ingliz tili)
+
                 const enResponse = await fetch('./data.json');
                 if (enResponse.ok) {
                     const enProducts = await enResponse.json();
                     localStorage.setItem('allProducts_en', JSON.stringify(enProducts));
                 }
 
-                // data2.json ni yuklash (gruzin tili)
+
                 const geoResponse = await fetch('./data2.json');
                 if (geoResponse.ok) {
                     const geoProducts = await geoResponse.json();
@@ -5292,34 +5292,33 @@
             }
         }
 
-        // Saqlangan ma'lumotlarni olish
+        // Извлечь сохраненные данные
         function getStoredProducts(lang) {
             const stored = localStorage.getItem(`allProducts_${lang}`);
             return stored ? JSON.parse(stored) : [];
         }
 
-        // Ma'lumotlarni tozalash
+       // Очистить данные
         function clearStoredProducts(lang) {
             if (lang) {
                 localStorage.removeItem(`allProducts_${lang}`);
             } else {
-                // Barcha tillarni tozalash
                 localStorage.removeItem('allProducts_en');
                 localStorage.removeItem('allProducts_geo');
             }
         }
 
-        // Sahifa yuklanganda avtomatik ishga tushirish
+       // Автоматически запускается при загрузке страницы
         document.addEventListener('DOMContentLoaded', function () {
             loadAndSaveAllProducts();
         });
 
-        // Click event (yangilangan)
+        // Событие щелчка (обновлено)
         document.querySelectorAll(".jss1 button").forEach(btn => {
             btn.addEventListener("click", function () {
                 let product = this.closest(".card_product");
 
-                // DOM'dan narxlarni olish va tekshirish
+                // Получить и проверить цены из DOM
                 const priceElement = product.querySelector(".for_price");
                 const aksiyaPriceElement = product.querySelector(".for_aksiyaPrice");
 
@@ -5334,34 +5333,32 @@
                     discountedPrice = parseFloat(aksiyaPriceElement.textContent.trim()) || 0;
                 }
 
-                // data-atributlarga yozib qo'yish
+                
                 product.dataset.price = originalPrice.toFixed(2);
                 if (discountedPrice > 0) {
                     product.dataset.aksiyaPrice = discountedPrice.toFixed(2);
                 }
 
-                // Mahsulot ma'lumotlarini olish (YANGILANGAN)
                 let productData = {
                     id: product.dataset.id,
                     img: product.dataset.img,
                     img_1: product.dataset.img_1 || '',
                     title: product.dataset.title,
-                    ingredients: product.dataset.ingredients || '', // "Ingredients" -> "ingredients"
+                    ingredients: product.dataset.ingredients || '',
                     description: product.dataset.description,
                     type: product.dataset.type || '',
                     price: originalPrice,
                     aksiyaPrice: discountedPrice || 0,
-                    language: getCurrentLanguage(), // MUHIM: language qo'shdik
-                    timestamp: Date.now()           // Vaqt qo'shdik
+                    language: getCurrentLanguage(), 
+                    timestamp: Date.now()
                 };
 
-                // Debug uchun log
 
 
-                // Tanlangan mahsulotni LocalStorage'ga saqlash
+                // Сохранить выбранный продукт в LocalStorage
                 localStorage.setItem("selectedProduct", JSON.stringify(productData));
 
-                // Yo'naltirish
+                // Перенаправление
                 if (product.dataset.type && product.dataset.type === 'pizza') {
                     window.location.href = "./details-pizza/";
                 } else {
@@ -5370,16 +5367,60 @@
             });
         });
 
+        
+
 
         document.addEventListener("DOMContentLoaded", function () {
-            var aksiya = 35; // aksiya foizi
-            var discount = 100 - aksiya;
-            localStorage.setItem("for_aksiya", discount);
+            // ===========================================
+            // Пояснение для пользователя:
+            // Переменная "aksiya" задаёт процент акции (скидки).
+            // Например:
+            //   var aksiya = 35;  → это означает, что акция составляет 35%.
+            //   var aksiya = 50;  → это означает, что акция составляет 50%.
+            //
+            // В следующей строке мы рассчитываем значение "discount" 
+            // как (100 - aksiya). Это нужно для того, чтобы где-то 
+            // в коде использовать оставшийся процент после скидки.
+            //
+            // Пример:
+            //   Если "aksiya" = 35, то discount = 65.
+            //   Если "aksiya" = 50, то discount = 50.
+            //
+            // Это значение сохраняется в localStorage под ключом "for_aksiya", 
+            // чтобы его можно было использовать на других страницах или 
+            // при повторной загрузке сайта.
+            // ===========================================
+
+            var aksiya = 35; // процент акции (можно менять на любое число от 0 до 100)
+            var discount = 100 - aksiya; // вычисляем оставшийся процент
+            localStorage.setItem("for_aksiya", discount); // сохраняем в localStorage
         })
+
 
         localStorage.removeItem("for_id")
         localStorage.removeItem("edit")
     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
@@ -5395,10 +5436,10 @@
                 variableWidth: true,
                 responsive: [
                     {
-                        breakpoint: 600,   // 600px dan kichik ekranda 1 ta slide
+                        breakpoint: 600,   
                         settings: {
                             slidesToShow: 1,
-                            slidesToScroll: 1, // <-- 0 emas, 1 bo'lishi shart
+                            slidesToScroll: 1,
                             variableWidth: false,
                             infinite: false
                         }
