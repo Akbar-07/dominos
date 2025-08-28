@@ -5306,6 +5306,980 @@
     </div>
     </div>
     
+    <div class="for_firs_page">
+
+
+    <div class="baraban_black" id="modal">
+        <div class="baraban_modal">
+            <div class="modal-content">
+                
+                
+                <div class="success-checkmark"></div>
+                
+                <h2>თქვენ მოიგეთ!</h2>
+                <h3 class="for_aksiya_baraban"></h3>
+                
+                <div class="prize-container">
+                    <img class="for_img_baraban" src="" alt="">
+                </div>
+                
+                <button class="okey-button" onclick="syncAddresses()">კარგი</button>
+            </div>
+        </div>
+    </div>
+
+        <style>
+        /* Modal Styles */
+        .for_img_baraban{
+             width:100px;
+             height:50px;
+        }
+        .prize-container{
+            width:100%;
+            display:flex;
+            justify-content: center;
+        }
+        .baraban_black {
+            display: none;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(8px);
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .baraban_black.show {
+            display: flex;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .baraban_modal {
+            background: linear-gradient(145deg, #ffffff, #f8f9fa);
+            border-radius: 25px;
+            padding: 0;
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.25),
+                0 0 0 1px rgba(255, 255, 255, 0.05);
+            max-width: 450px;
+            width: 90%;
+            max-height: 90vh;
+            overflow: hidden;
+            position: relative;
+            animation: modalSlideIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            transform-origin: center;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                transform: scale(0.7) translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-content {
+            padding: 40px 30px 30px 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Decorative elements */
+        .baraban_modal::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3, #54a0ff);
+            background-size: 300% 100%;
+            animation: gradientShift 3s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .modal-content h2 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .for_aksiya_baraban {
+            font-size: 1.6rem;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .prize-container {
+            margin: 30px 0;
+            position: relative;
+        }
+
+      
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .for_img_baraban:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.3),
+                0 0 0 3px rgba(102, 126, 234, 0.3);
+        }
+
+        .okey-button {
+            background: linear-gradient(145deg, #00d2d3, #54a0ff);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 210, 211, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .okey-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .okey-button:hover::before {
+            left: 100%;
+        }
+
+        .okey-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(0, 210, 211, 0.4);
+            background: linear-gradient(145deg, #54a0ff, #00d2d3);
+        }
+
+        .okey-button:active {
+            transform: translateY(-1px);
+            transition: all 0.1s ease;
+        }
+
+        /* Close button */
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.1);
+            border: none;
+            font-size: 1.5rem;
+            color: #666;
+            cursor: pointer;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .close-btn:hover {
+            background: rgba(231, 76, 60, 0.1);
+            color: #e74c3c;
+            transform: rotate(90deg);
+        }
+
+        /* Confetti animation */
+        .confetti {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 2px;
+            animation: confetti-fall 3s linear infinite;
+        }
+
+        @keyframes confetti-fall {
+            0% {
+                transform: translateY(-100px) rotateZ(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(400px) rotateZ(720deg);
+                opacity: 0;
+            }
+        }
+
+        /* Success animation */
+        .success-checkmark {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #2ecc71, #27ae60);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            box-shadow: 0 10px 30px rgba(46, 204, 113, 0.3);
+        }
+
+        .success-checkmark::after {
+            content: '✓';
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.3);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            70% {
+                transform: scale(0.9);
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 480px) {
+            .modal-content {
+                padding: 30px 20px;
+            }
+            
+            .modal-content h2 {
+                font-size: 2rem;
+            }
+            
+            .for_aksiya_baraban {
+                font-size: 1.3rem;
+            }
+            
+            .for_img_baraban {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .okey-button {
+                padding: 12px 30px;
+                font-size: 1.1rem;
+            }
+        }
+            .for_aksiya_baraban {
+                text-align: center;
+            }
+
+          
+
+
+
+  :where(.ui-wheel-of-fortune) {
+  --_items: 12;
+  all: unset;
+  aspect-ratio: 1 / 1;
+  container-type: inline-size;
+  direction: ltr;
+  display: grid;
+  position: relative;
+  width: 100%;
+      box-shadow: 0 0 0 8px #e74c3c, 0 0 0 12px #FFD700, 0 15px 30px rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+ 
+
+  & > * { position: absolute; }
+
+  button {
+    aspect-ratio: 1 / 1;
+    background: #FFA500;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 5cqi;
+    place-self: center;
+    width: 20cqi;
+  }
+
+  ul {
+    all: unset;
+    clip-path: inset(0 0 0 0 round 50%);
+    display: grid;
+    inset: 0;
+    place-content: center start;
+
+    li {
+      align-content: center;
+      aspect-ratio: 1 / calc(2 * tan(180deg / var(--_items)));
+      clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+      display: grid;
+      font-size: 5cqi;
+      grid-area: 1 / -1;
+      padding-left: 1ch;
+      rotate: calc(360deg / var(--_items) * calc(var(--_idx) - 1));
+      transform-origin: center right;
+      user-select: none;
+      width: 50cqi;
+      text-align: start;
+
+      &:nth-of-type(1) { --_idx: 1; background: white;}
+      &:nth-of-type(2) { --_idx: 2; background: #e74c3c; }
+      &:nth-of-type(3) { --_idx: 3; background: white;}
+      &:nth-of-type(4) { --_idx: 4; background: #e74c3c; }
+      &:nth-of-type(5) { --_idx: 5; background: white;}
+      &:nth-of-type(6) { --_idx: 6; background: #e74c3c; }
+      &:nth-of-type(7) { --_idx: 7; background: white;}
+      &:nth-of-type(8) { --_idx: 8; background: #e74c3c; }
+      &:nth-of-type(9) { --_idx: 9; background: white;}
+      &:nth-of-type(10) { --_idx: 10; background: #e74c3c; }
+      &:nth-of-type(11) { --_idx: 11; background: white;}
+      &:nth-of-type(12) { --_idx: 12; background: #e74c3c; }
+    }
+  }
+}
+
+/* for demo */
+
+
+li img{
+  width: 60px;
+}
+</style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .for_firs_page .img-postion-2{
+            left: 8px;
+            right: auto;
+        }
+
+        .for_firs_page .tooltip-flag span{
+            left: 42px;
+        }
+
+        .for_firs_page {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow-x: hidden;
+            z-index: 11111111111111111111;
+        }
+
+        /* Christmas lights decoration */
+        .lights {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: linear-gradient(135deg, #3186d1 0%, #3186d1 100%);
+            z-index: 1;
+        }
+
+        .lights::before {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background: repeating-linear-gradient(
+                90deg,
+                #3498db 0px, #3498db 30px,
+                #e74c3c 30px, #e74c3c 60px,
+                #2ecc71 60px, #2ecc71 90px,
+                #f39c12 90px, #f39c12 120px,
+                #9b59b6 120px, #9b59b6 150px
+            );
+            border-radius: 0 0 50% 50%;
+        }
+
+        .game-container {
+                background: rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(10px);
+                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            padding: 50px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .title {
+            font-size: 3em;
+            color: #e74c3c;
+            margin-bottom: 15px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        .wheel-container {
+            position: relative;
+            width: 350px;
+            height: 350px;
+            margin: 30px auto;
+        }
+
+        .wheel {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            position: relative;
+            transition: transform 4s cubic-bezier(0.25, 0.1, 0.25, 1);
+            box-shadow: 
+                0 0 0 8px #e74c3c,
+                0 0 0 12px #FFD700,
+                0 15px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .wheel-segment {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            transform-origin: 100% 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .segment-content {
+            text-align: center;
+            transform: rotate(-22.5deg);
+            font-size: 1.1em;
+        }
+
+        .segment-1 { 
+            transform: rotate(0deg); 
+            background: #e74c3c;
+            clip-path: polygon(0 0, 70.7% 0, 100% 100%);
+        }
+        .segment-2 { 
+            transform: rotate(45deg); 
+            background: #f8f9fa;
+            color: #2c3e50;
+            clip-path: polygon(0 0, 70.7% 0, 100% 100%);
+        }
+        .segment-3 { 
+            transform: rotate(90deg); 
+            background: #ff6b35;
+            clip-path: polygon(0 0, 70.7% 0, 100% 100%);
+        }
+        .segment-4 { 
+            transform: rotate(135deg); 
+            background: #f8f9fa;
+            color: #2c3e50;
+            clip-path: polygon(0 0, 70.7% 0, 100% 100%);
+        }
+        .segment-5 { 
+            transform: rotate(180deg); 
+            background: #e74c3c;
+            clip-path: polygon(0 0, 70.7% 0, 100% 100%);
+        }
+        .segment-6 { 
+            transform: rotate(225deg); 
+            background: #f8f9fa;
+            color: #2c3e50;
+            clip-path: polygon(0 0, 70.7% 0, 100% 100%);
+        }
+        .segment-7 { 
+            transform: rotate(270deg); 
+            background: #ff6b35;
+            clip-path: polygon(0 0, 70.7% 0, 100% 100%);
+        }
+        .segment-8 { 
+            transform: rotate(315deg); 
+            background: #e74c3c;
+            clip-path: polygon(0 0, 70.7% 0, 100% 100%);
+        }
+
+        .wheel-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(145deg, #FFD700, #FFA500);
+            border-radius: 50%;
+            border: 3px solid #e74c3c;
+            z-index: 10;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .pointer {
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 30px solid #e74c3c;
+            z-index: 15;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+        }
+
+        .spin-button {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: none;
+            padding: 20px 60px;
+            font-size: 1.8em;
+            font-weight: bold;
+            border-radius: 15px;
+            cursor: pointer;
+            margin: 40px 0 20px 0;
+            transition: all 0.3s ease;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .spin-button:hover:not(:disabled) {
+            background: linear-gradient(145deg, #c0392b, #a93226);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.4);
+        }
+
+        .spin-button:active {
+            transform: translateY(0);
+        }
+
+        .spin-button:disabled {
+            background: #95a5a6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        
+
+        .winner {
+            color: #e74c3c;
+            background: rgba(255, 215, 0, 0.9);
+            animation: celebration 2s ease-in-out;
+        }
+
+        @keyframes celebration {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .arrows {
+            position: absolute;
+            font-size: 2em;
+            color: #e74c3c;
+            font-weight: bold;
+            animation: bounce 2s infinite;
+        }
+
+        .arrow-left {
+            left: -60px;
+            top: 50%;
+            transform: translateY(-50%) rotate(-45deg);
+        }
+
+        .arrow-right {
+            right: -60px;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(-50%) rotate(-45deg); }
+            40% { transform: translateY(-60%) rotate(-45deg); }
+            60% { transform: translateY(-60%) rotate(-45deg); }
+        }
+
+        .arrow-right {
+            animation-name: bounce-right;
+        }
+
+        @keyframes bounce-right {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(-50%) rotate(45deg); }
+            40% { transform: translateY(-60%) rotate(45deg); }
+            60% { transform: translateY(-60%) rotate(45deg); }
+        }
+        @media(max-width:600px){
+            .game-container{
+                max-width: 100% !important;
+                width: 100% !important;
+            }
+        }
+        @media (max-width:480px){
+            .wheel-container {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 30px auto;
+}
+.arrows{
+    display: none;
+}
+.wheel-center {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(145deg, #FFD700, #FFA500);
+    border-radius: 50%;
+    border: 3px solid #e74c3c;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+        }
+    </style>
+        
+ <div class="lights"></div>
+    
+    <div class="game-container">
+        <h1 class="title" style="padding-bottom: 30px;display: flex;justify-content: space-between; color: #2c3e50;"> <center><img src="../assets/image/dominos_blue_logo.c0fd9781d3faea268710.webp" alt=""></center> <div class="flag-wrapper">
+                                    <div style="cursor: pointer;">
+                                        <img style="width: 35px;" src="../assets/image/gruziya.png" alt="ENG">
+                                        <p class="p-style">GEO</p>
+                                    </div>
+
+                                    <div onclick="window.location='../'" class="tooltip-flag">
+                                        <div>
+                                            <img class="img-postion-2" src="../assets/image/britsht.png" alt="GEO">
+                                            <span class="text-postion-2">Eng</span>
+                                        </div>
+                                    </div>
+                                </div></h1>
+        <p class="subtitle" style="">დაატრიალეთ იღბლის ბორბალი და გარანტირებულად მოიგეთ ფასდაკლება ან გემრიელი პრიზი</p>
+        
+        <div class="wheel-container">
+            <div class="pointer"></div>
+            <div class="arrows arrow-left">↗</div>
+            <div class="arrows arrow-right">↖</div>
+            <fieldset class="ui-wheel-of-fortune">
+  <ul>
+    <li>10%</li>
+    <li><img src="https://deykvccewcmn1.cloudfront.net/20250423093225517_%C3%A1%C2%83%C2%99%C3%A1%C2%83%C2%90%C3%A1%C2%83%C3%A1%C2%83%C2%A2%C3%A1%C2%83%C2%9D%C3%A1%C2%83%C2%A4%C3%A1%C2%83%C2%98%C3%A1%C2%83%C2%9A%C3%A1%C2%83%C2%98300.webp" alt=""></li>
+    <li>20%</li>
+    <li><img src="https://deykvccewcmn1.cloudfront.net/20250324070139338_%C3%A1%C2%83%C2%9E%C3%A1%C2%83%C2%9D%C3%A1%C2%83%C2%9E%C3%A1%C2%83%C2%A1%C3%A1%C2%83%C2%98200.webp" alt=""></li>
+    <li>30%</li>
+    <li><img src="https://deykvccewcmn1.cloudfront.net/3_cheese_wrap.webp" alt=""></li>
+    <li>40%</li>
+    <li><img src="https://deykvccewcmn1.cloudfront.net/Mexican_s.webp" alt=""></li>
+    <li>50%</li>
+    <li><img src="https://deykvccewcmn1.cloudfront.net/chicken_BBQ_Load_potato.webp" alt=""></li>
+    <li>60%</li>
+    <li><img src="https://deykvccewcmn1.cloudfront.net/20250423094254551_%C3%A1%C2%83%C2%A4%C3%A1%C2%83%C2%98%C3%A1%C2%83%C2%9C%C3%A1%C2%83%C2%92%C3%A1%C2%83%C2%94%C3%A1%C2%83%C3%A1%C2%83%C2%A1%C3%A1%C2%83%C2%99%C3%A1%C2%83%C2%90%C3%A1%C2%83%C2%9A%C3%A1%C2%83%C2%90%C3%A1%C2%83%C2%97%C3%A1%C2%83%C2%90.webp" alt=""></li>
+  </ul>
+</fieldset>
+            <div class="wheel-center"></div>
+        </div>
+
+        
+
+        <button class="spin-button" id="spinButton" type="button">სცადეთ თქვენი ბედი</button>
+        
+        <!-- <div class="result" id="result">Baxtingizni sinab ko'ring! 🍀</div> -->
+    </div>
+
+    <script>
+      
+     function wheelOfFortune(selector) {
+  const node = document.querySelector(selector);
+  if (!node) return;
+
+  const spin = document.querySelector('.spin-button');
+  const wheel = node.querySelector('ul');
+  let animation;
+  let previousEndDegree = 0;
+
+  spin.addEventListener('click', () => {
+    if (animation) {
+      animation.cancel(); 
+    }
+
+   
+    const possibleDegrees = [320, 400, 530, 720, 820];
+    const targetDegree = possibleDegrees[Math.floor(Math.random() * possibleDegrees.length)];
+    
+   
+
+    
+    localStorage.setItem('is_active_baraban', true); 
+    switch(targetDegree) {
+      case 320:
+        localStorage.setItem('for_aksiya', 100-30);
+        localStorage.setItem('baraban_aksiya', true);
+        console.log('localStorage ga saqlandi: aksiya = 30');
+        document.querySelector(".for_aksiya_baraban").innerHTML="30% ფასდაკლება"
+        document.querySelector(".for_img_baraban").style="display:none"
+        break;
+      case 820:
+        localStorage.setItem('for_aksiya', 100-10);
+        localStorage.setItem('baraban_aksiya', true);
+        console.log('localStorage ga saqlandi: aksiya = 10');
+        document.querySelector(".for_aksiya_baraban").innerHTML="10% ფასდაკლება"
+        document.querySelector(".for_img_baraban").style="display:none"
+        break;
+      case 400:
+        localStorage.setItem('for_aksiya', 100-20);
+        localStorage.setItem('baraban_aksiya', true);
+        console.log('localStorage ga saqlandi: aksiya = 20');
+        document.querySelector(".for_aksiya_baraban").innerHTML="20% ფასდაკლება"
+        document.querySelector(".for_img_baraban").style="display:none"
+        break;
+      case 720:
+        document.querySelector(".for_img_baraban").src="https://deykvccewcmn1.cloudfront.net/20250324070320341_%C3%A1%C2%83%C2%9E%C3%A1%C2%83%C2%9D%C3%A1%C2%83%C2%9E%C3%A1%C2%83%C2%A1%C3%A1%C2%83%C2%98300.webp"
+        
+        let existingCart = localStorage.getItem('cart');
+        let isChickenPopsExists = false;
+        
+        if (existingCart) {
+          try {
+            let cartArray = JSON.parse(existingCart);
+            if (Array.isArray(cartArray)) {
+              isChickenPopsExists = cartArray.some(item => item.id === "57");
+            } else if (cartArray.id === "57") {
+              isChickenPopsExists = true;
+            }
+          } catch (e) {
+            console.error('Cart parse error:', e);
+          }
+        }
+        
+        if (isChickenPopsExists) {
+          
+          break;
+        }
+        
+        const chickenPopsData = {
+          aksiyaPrice: 16.9,
+          count: 1,
+          description: "ქათმის პოპსები 300 გრ, იოგურტის სოუსი",
+          for_favorite: true,
+          id: "57",
+          img: "https://deykvccewcmn1.cloudfront.net/20250324070320341_%C3%A1%C2%83%C2%9E%C3%A1%C2%83%C2%9D%C3%A1%C2%83%C2%9E%C3%A1%C2%83%C2%A1%C3%A1%C2%83%C2%98300.webp",
+          price: 8.5,
+          title: "ქათმის პოპები",
+          total: 16.9
+        };
+        
+        // Mavjud cart ma'lumotlarini olish
+        let cartArray = [];
+        
+        if (existingCart) {
+          try {
+            cartArray = JSON.parse(existingCart);
+            // Agar array emas bo'lsa, array ga aylantirish
+            if (!Array.isArray(cartArray)) {
+              cartArray = [cartArray];
+            }
+          } catch (e) {
+            cartArray = [];
+          }
+        }
+        
+        // Yangi ma'lumotni qo'shish
+        cartArray.push(chickenPopsData);
+        
+        localStorage.setItem('cart', JSON.stringify(cartArray));
+        console.log('LocalStorage ga saqlandi: cart =', cartArray);
+        break;
+      case 530:
+        // Avval cart da Potato With Chicken BBQ bor-yo'qligini tekshirish
+        let existingCart2 = localStorage.getItem('cart');
+        document.querySelector(".for_img_baraban").src="https://deykvccewcmn1.cloudfront.net/chicken_BBQ_Load_potato.webp"
+        let isPotatoChickenExists = false;
+        
+        if (existingCart2) {
+          try {
+            let cartArray2 = JSON.parse(existingCart2);
+            if (Array.isArray(cartArray2)) {
+              isPotatoChickenExists = cartArray2.some(item => item.id === "71");
+            } else if (cartArray2.id === "71") {
+              isPotatoChickenExists = true;
+            }
+          } catch (e) {
+            console.error('Cart parse error:', e);
+          }
+        }
+        
+        if (isPotatoChickenExists) {
+          
+          break;
+        }
+        
+        const potatoChickenData = {
+          aksiyaPrice: 10.9,
+          count: 1,
+          description: "კარტოფილი, ქათმის თითები, მოცარელა, ხალაპენიო, ბარბექიუს სოუსი",
+          for_favorite: true,
+          id: "71",
+          img: "https://deykvccewcmn1.cloudfront.net/chicken_BBQ_Load_potato.webp",
+          price: 5.4,
+          title: "კარტოფილი ქათმის BBQ 150 გ",
+          total: 10.9
+        };
+        
+        // Mavjud cart ma'lumotlarini olish
+        let cartArray2 = [];
+        
+        if (existingCart2) {
+          try {
+            cartArray2 = JSON.parse(existingCart2);
+            // Agar array emas bo'lsa, array ga aylantirish
+            if (!Array.isArray(cartArray2)) {
+              cartArray2 = [cartArray2];
+            }
+          } catch (e) {
+            cartArray2 = [];
+          }
+        }
+        
+        // Yangi ma'lumotni qo'shish
+        cartArray2.push(potatoChickenData);
+        
+        localStorage.setItem('cart', JSON.stringify(cartArray2));
+        console.log('LocalStorage ga saqlandi: cart =', cartArray2);
+        break;
+    }
+
+    // Kamida 3 marta to'liq aylanib, so'ngra random pozitsiyada to'xtash
+    const fullRotations = 1080; // 3 marta to'liq aylanish
+    const finalDegree = previousEndDegree + fullRotations + (targetDegree - (previousEndDegree % 360));
+
+    animation = wheel.animate([
+      { transform: `rotate(${previousEndDegree}deg)` },
+      { transform: `rotate(${finalDegree}deg)` }
+    ], {
+      duration: 4000,
+      direction: 'normal',
+      easing: 'cubic-bezier(0.440, -0.205, 0.000, 1.130)',
+      fill: 'forwards',
+      iterations: 1
+    });
+
+    previousEndDegree = finalDegree;
+
+    
+    animation.addEventListener('finish', () => {
+        document.querySelector(".baraban_black").style="display:flex"
+      switch(targetDegree) {
+        case 320:
+        case 820:
+        case 400:
+          
+          break;
+        case 720:
+          
+          let existingCart = localStorage.getItem('cart');
+          let isChickenPopsExists = false;
+          
+          if (existingCart) {
+            try {
+              let cartArray = JSON.parse(existingCart);
+              if (Array.isArray(cartArray)) {
+                isChickenPopsExists = cartArray.some(item => item.id === "57");
+              } else if (cartArray.id === "57") {
+                isChickenPopsExists = true;
+              }
+            } catch (e) {
+              console.error('Cart parse error:', e);
+            }
+          }
+          
+          
+          
+          break;
+        case 530:
+          
+          let existingCart2 = localStorage.getItem('cart');
+          let isPotatoChickenExists = false;
+          
+          if (existingCart2) {
+            try {
+              let cartArray2 = JSON.parse(existingCart2);
+              if (Array.isArray(cartArray2)) {
+                isPotatoChickenExists = cartArray2.some(item => item.id === "71");
+              } else if (cartArray2.id === "71") {
+                isPotatoChickenExists = true;
+              }
+            } catch (e) {
+              console.error('Cart parse error:', e);
+            }
+          }
+          
+          
+          
+          break;
+      }
+    });
+  });
+}
+
+// Usage
+wheelOfFortune('.ui-wheel-of-fortune');
+    </script>
+</div>
 
     <script src="../assets/js/terms-main.js"></script>
     <script src="../assets/js/addCart.js"></script>
@@ -5313,8 +6287,25 @@
 
     <script>
 
+           if ((sessionStorage.getItem('addresses'))) {
+            localStorage.removeItem("is_active_baraban")
+        }
+
+        if (!(sessionStorage.getItem('addresses'))) {
+            document.querySelector(".for_firs_page").style="display:flex"
+            document.querySelector("#root").style="display:none"
+        }
+
+        if ((localStorage.getItem('is_active_baraban'))) {
+            document.querySelector(".for_firs_page").style="display:none"
+            document.querySelector("#root").style="display:block"
+            window.location.href = './service-method/';
+        }
+
             function syncAddresses() {
                 const sessionAddress = JSON.parse(sessionStorage.getItem('addresses') || 'null');
+
+
 
                 if (!sessionAddress) {
                     window.location.href = './service-method/';
@@ -5329,8 +6320,6 @@
                     container.innerHTML = `<div>${addressObj.display_name || ''}</div>`;
                 }
             }
-
-            document.addEventListener('DOMContentLoaded', syncAddresses);
 
 
 

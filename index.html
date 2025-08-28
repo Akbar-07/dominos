@@ -5602,6 +5602,15 @@ li img{
             box-sizing: border-box;
         }
 
+        .for_firs_page .img-postion-2{
+            left: 8px;
+            right: auto;
+        }
+
+        .for_firs_page .tooltip-flag span{
+            left: 42px;
+        }
+
         .for_firs_page {
             font-family: 'Arial', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -5897,7 +5906,19 @@ li img{
  <div class="lights"></div>
     
     <div class="game-container">
-        <h1 class="title" style="padding-bottom: 30px;"> <center><img src="./assets/image/dominos_blue_logo.c0fd9781d3faea268710.webp" alt=""></center> </h1>
+        <h1 class="title" style="padding-bottom: 30px;display: flex;justify-content: space-between; color: #2c3e50;"> <center><img src="./assets/image/dominos_blue_logo.c0fd9781d3faea268710.webp" alt=""></center> <div class="flag-wrapper">
+                                    <div style="cursor: pointer;">
+                                        <img src="../assets/image/britsht.png" alt="ENG">
+                                        <p class="p-style">ENG</p>
+                                    </div>
+
+                                    <div onclick="window.location='../geo/'" class="tooltip-flag">
+                                        <div>
+                                            <img class="img-postion-2" src="../assets/image/gruziya.png" alt="GEO">
+                                            <span class="text-postion-2">GEO</span>
+                                        </div>
+                                    </div>
+                                </div></h1>
         <p class="subtitle" style="">Spin the wheel of luck and be guaranteed to win a discount or a tasty prize</p>
         
         <div class="wheel-container">
@@ -5959,19 +5980,22 @@ li img{
         localStorage.setItem('for_aksiya', 100-30);
         localStorage.setItem('baraban_aksiya', true);
         console.log('localStorage ga saqlandi: aksiya = 30');
-        document.querySelector(".for_aksiya_baraban").innerHTML="30% skidka"
+        document.querySelector(".for_aksiya_baraban").innerHTML="30% discount"
+        document.querySelector(".for_img_baraban").style="display:none"
         break;
       case 820:
         localStorage.setItem('for_aksiya', 100-10);
         localStorage.setItem('baraban_aksiya', true);
         console.log('localStorage ga saqlandi: aksiya = 10');
-        document.querySelector(".for_aksiya_baraban").innerHTML="10% skidka"
+        document.querySelector(".for_aksiya_baraban").innerHTML="10% discount"
+        document.querySelector(".for_img_baraban").style="display:none"
         break;
       case 400:
         localStorage.setItem('for_aksiya', 100-20);
         localStorage.setItem('baraban_aksiya', true);
         console.log('localStorage ga saqlandi: aksiya = 20');
-        document.querySelector(".for_aksiya_baraban").innerHTML="20% skidka"
+        document.querySelector(".for_aksiya_baraban").innerHTML="20% discount"
+        document.querySelector(".for_img_baraban").style="display:none"
         break;
       case 720:
         document.querySelector(".for_img_baraban").src="https://deykvccewcmn1.cloudfront.net/20250324070320341_%C3%A1%C2%83%C2%9E%C3%A1%C2%83%C2%9D%C3%A1%C2%83%C2%9E%C3%A1%C2%83%C2%A1%C3%A1%C2%83%C2%98300.webp"
